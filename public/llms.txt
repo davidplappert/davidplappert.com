@@ -64,11 +64,10 @@ Engagement scope and pricing are discussed during the initial conversation.
 - [About](https://davidplappert.com/about): https://davidplappert.com/about
 - [FAQ](https://davidplappert.com/faq): https://davidplappert.com/faq
 - [Book a Call](https://davidplappert.com/book): https://davidplappert.com/book
-- [Contact](https://davidplappert.com/contact): https://davidplappert.com/contact
 
 ## Contact
 
-- Email: david@davidplappert.com
+- Book a call: https://davidplappert.com/book (15-minute Google Meet discovery call)
 - LinkedIn: https://www.linkedin.com/in/davidplappert
 - Location: Peoria, Illinois — working remote globally
-- Response time: within 48 hours for legitimate inquiries
+- All inquiries go through the booking page; no direct email or phone is published

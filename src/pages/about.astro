@@ -3,10 +3,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 
 const credentials = [
-  { title: 'US Patent 11,146,689', detail: 'Cloud architecture, issued October 12, 2021' },
-  { title: 'AWS City on a Cloud Award (2016)', detail: 'Innovative cloud solutions' },
-  { title: 'AWS City on a Cloud Award (2018)', detail: 'Innovative cloud solutions' },
-  { title: 'Principal Digital Architect', detail: '10-year title at prior employer' },
+  {
+    title: 'US Patent 11,146,689',
+    detail: 'Cloud architecture, issued October 12, 2021',
+    url: 'https://patents.google.com/patent/US11146689',
+  },
+  {
+    title: 'AWS City on a Cloud Award (2016)',
+    detail: 'Best Practices Award for DC Health Link, where IdeaCrew led the engineering',
+    url: 'https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/',
+  },
+  {
+    title: 'AWS City on a Cloud Award (2018)',
+    detail: "IdeaCrew's open-source cloud technology recognized for the second time",
+    url: 'https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm',
+  },
+  { title: 'Principal Digital Architect', detail: '10-year title at IdeaCrew' },
   { title: '20 years AWS', detail: 'Since EC2 beta launch in 2006' },
   { title: '$500M+ per year', detail: 'In production payments processed on AWS serverless' },
   { title: '$1M/month cloud budget', detail: 'Managed across 12 AWS and 3 Azure accounts' },
@@ -77,7 +89,13 @@ const roles = [
       {
         credentials.map((c) => (
           <li class="border-l-2 border-accent pl-4">
-            <strong class="text-navy-900">{c.title}</strong>
+            {c.url ? (
+              <a href={c.url} target="_blank" rel="noopener" class="text-navy-900 font-semibold underline decoration-1 underline-offset-2 hover:decoration-2">
+                {c.title}
+              </a>
+            ) : (
+              <strong class="text-navy-900">{c.title}</strong>
+            )}
             <span class="text-slate-600"> — {c.detail}</span>
           </li>
         ))
