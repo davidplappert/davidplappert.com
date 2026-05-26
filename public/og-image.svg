@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1f3d"/>
+      <stop offset="100%" stop-color="#102a43"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Orange accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="#c2410c"/>
+
+  <!-- Eyebrow / role label -->
+  <text x="80" y="160" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">FRACTIONAL AWS RELIABILITY LEAD</text>
+
+  <!-- Name -->
+  <text x="80" y="240" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="80" font-weight="800">David Plappert</text>
+
+  <!-- Tagline -->
+  <text x="80" y="340" fill="#d9e2ec" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="500">Production reliability for</text>
+  <text x="80" y="395" fill="#d9e2ec" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="500">revenue-critical AWS systems.</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="465" x2="1120" y2="465" stroke="#243b53" stroke-width="1"/>
+
+  <!-- Credentials row -->
+  <text x="80" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">US Patent 11,146,689</text>
+  <text x="425" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">·</text>
+  <text x="445" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">2× AWS City on a Cloud Award</text>
+  <text x="880" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">·</text>
+  <text x="900" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">20 years AWS</text>
+
+  <!-- URL -->
+  <text x="80" y="580" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">davidplappert.com</text>
+</svg>

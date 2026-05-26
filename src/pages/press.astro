@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const press = [
+  {
+    year: '2021',
+    headline: 'US Patent 11,146,689 — Cloud Architecture',
+    source: 'United States Patent and Trademark Office',
+    summary: 'Patent issued October 12, 2021. Covers cloud architecture innovation.',
+    url: 'https://patents.google.com/patent/US11146689',
+    type: 'Patent',
+  },
+  {
+    year: '2018',
+    headline: "IdeaCrew's Open Source Cloud-based Technology Powers DC Health Link To Second Prestigious Amazon Award",
+    source: 'PRWeb',
+    summary: 'AWS recognized IdeaCrew\'s open-source cloud technology powering DC Health Link with the City on a Cloud Innovation Challenge award for the second time. David led the engineering team that delivered this work.',
+    url: 'https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm',
+    type: 'Award',
+  },
+  {
+    year: '2018',
+    headline: 'Announcing the 2018 City on a Cloud Winners — Congratulations!',
+    source: 'AWS Public Sector Blog',
+    summary: 'Official AWS announcement of the 2018 City on a Cloud Innovation Challenge winners. DC Health Benefit Exchange Authority (DCHBX) recognized in the Best Practices Award — Large category for the IdeaCrew-built platform.',
+    url: 'https://aws.amazon.com/blogs/publicsector/announcing-the-2018-city-on-a-cloud-winners-congratulations/',
+    type: 'Award',
+  },
+  {
+    year: '2016',
+    headline: 'City on a Cloud Innovation Challenge: Best Practices Award Winners',
+    source: 'AWS Public Sector Blog',
+    summary: 'Official AWS announcement of the 2016 City on a Cloud Innovation Challenge Best Practices Award. DC Health Benefit Exchange Authority recognized for migration to AWS cloud — a 23 percent increase in enrollment, increased website performance, and 30 percent annual cost savings. David led the engineering team at IdeaCrew that built and operates the platform.',
+    url: 'https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/',
+    type: 'Award',
+  },
+  {
+    year: '2016',
+    headline: 'DC Health Benefit Exchange Authority Wins Best Practices Award for IT Innovation',
+    source: 'DC Health Benefit Exchange Authority',
+    summary: 'Official DCHBX press release announcing the 2016 AWS Best Practices Award win for the IdeaCrew-built platform.',
+    url: 'https://hbx.dc.gov/release/dc-health-benefit-exchange-authority-wins-best-practices-award-it-innovation',
+    type: 'Press Release',
+  },
+];
+---
+<BaseLayout
+  title="Press & Recognition — David Plappert"
+  description="Press coverage, patents, and industry recognition for David Plappert's AWS production engineering work, including US Patent 11,146,689 and two AWS City on a Cloud Innovation Awards."
+>
+  <PageHero
+    eyebrow="Press & recognition"
+    title="Awards, patents, and press coverage."
+    subtitle="Industry recognition for production AWS engineering, from US Patent and Trademark Office and Amazon Web Services."
+  />
+
+  <div class="container-prose py-20">
+    <div class="space-y-12">
+      {
+        press.map((p) => (
+          <article class="border-l-4 border-accent pl-6 py-2">
+            <div class="flex items-baseline gap-3 mb-2">
+              <span class="text-2xl font-bold text-navy-900">{p.year}</span>
+              <span class="text-xs uppercase tracking-wider text-accent font-semibold">{p.type}</span>
+            </div>
+            <h2 class="text-xl font-semibold text-navy-900 mb-2 leading-tight">
+              <a href={p.url} target="_blank" rel="noopener" class="hover:underline">{p.headline}</a>
+            </h2>
+            <p class="text-sm text-slate-500 mb-3">{p.source}</p>
+            <p class="text-slate-700 leading-relaxed mb-3">{p.summary}</p>
+            <a href={p.url} target="_blank" rel="noopener" class="link-underline text-sm font-medium">
+              Read original →
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-20 p-8 bg-slate-50 rounded-lg border border-slate-200">
+      <h2 class="text-xl font-semibold text-navy-900 mb-3">Press inquiries</h2>
+      <p class="text-slate-700">
+        For media inquiries, podcast invitations, or speaking engagements, book a 15-minute call.
+      </p>
+      <div class="mt-4">
+        <a href="/book" class="link-underline font-medium">Book a call →</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

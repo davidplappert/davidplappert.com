@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CredentialsBar from '../components/CredentialsBar.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 ---
 <BaseLayout title="David Plappert — Fractional AWS Reliability Lead">
   <section class="bg-white">
@@ -110,6 +111,22 @@ import CredentialsBar from '../components/CredentialsBar.astro';
       <a href="/case-studies" class="link-underline font-medium">Read the case studies →</a>
     </div>
   </section>
+
+  <!-- Pillar guide teaser -->
+  <section class="bg-white py-20 border-t border-slate-200">
+    <div class="container-wide">
+      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">Guide</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6 max-w-3xl">
+        What is Vendor-Shipped AWS Gatekeeping?
+      </h2>
+      <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
+        A practitioner's guide to the senior IC discipline that sits between vendor releases and your production. Definitions, failure modes, a five-step framework, and when the role earns its rate.
+      </p>
+      <a href="/guides/vendor-shipped-aws-gatekeeping" class="link-underline font-medium">Read the guide →</a>
+    </div>
+  </section>
+
+  <NewsletterSignup />
 
   <section class="bg-navy-900 text-white py-20">
     <div class="container-wide text-center">
