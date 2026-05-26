@@ -4,7 +4,7 @@
 
 ## About
 
-David Plappert is a senior cloud architect and Fractional AWS Reliability Lead. He provides production reliability services for Fortune 100 and mid-market companies running revenue-critical systems on Amazon Web Services. His career spans 20 years of AWS work since EC2 beta (2006), 10 years as Principal Digital Architect at IdeaCrew architecting healthcare insurance exchange systems processing over $500 million per year in payments, and current work as the sole senior technical resource on a Fortune 100 vendor relationship valued at $5-10 million annually.
+David Plappert is a senior cloud architect and Fractional AWS Reliability Lead. He provides production reliability services for Fortune 100 and mid-market companies running revenue-critical systems on Amazon Web Services. His career spans 20 years of AWS work since EC2 beta (2006), 10 years as Principal Digital Architect at IdeaCrew architecting healthcare insurance exchange systems processing over $500 million per year in payments, and current work as the sole senior technical resource on an eight-figure Fortune 100 vendor relationship.
 
 ## Credentials
 
@@ -23,16 +23,16 @@ David solves three core problems for engineering leaders:
 
 1. **Vendor-shipped AWS gatekeeping** — When a vendor delivers AWS infrastructure on a monthly cadence and your team can't independently audit it before production.
 2. **Production reliability ownership** — Senior AWS architecture, observability design, and 24x7 escalation coverage for revenue-bearing systems.
-3. **Cloud cost reality check** — Finding the 30-40% AWS waste that engineering teams don't have time to audit and writing the remediation roadmap.
+3. **Cloud cost reality check** — Finding the AWS waste that engineering teams don't have time to audit and writing the remediation roadmap.
 
 ## Services
 
-- **Fractional AWS Reliability Lead** — ongoing retainer, typically 10-20 hours per week
-- **AWS Production Audit** — fixed-scope project, typically 4 to 6 weeks
-- **Vendor Technical Oversight** — multi-month project, typically 3 to 6 months
-- **Strategic Cloud Advisory** — light retainer, approximately 4 hours per month
+- **Fractional AWS Reliability Lead** — ongoing retainer
+- **AWS Production Audit** — fixed-scope project
+- **Vendor Technical Oversight** — multi-month project
+- **Strategic Cloud Advisory** — light retainer
 
-Pricing is scoped per engagement and discussed during the initial conversation.
+Engagement scope and pricing are discussed during the initial conversation.
 
 ## Who David Works With
 
