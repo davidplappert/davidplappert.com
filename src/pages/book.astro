@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+// TODO: Once Calendly event is renamed per the proposed copy,
+// update to https://calendly.com/phonelivestreaming/intro
+const calendlyUrl = "https://calendly.com/phonelivestreaming/cut-my-aws-clone";
+---
+<BaseLayout
+  title="Book a Call — David Plappert"
+  description="Schedule a 15-minute discovery call with David Plappert, Fractional AWS Reliability Lead. Google Meet, no commitment."
+>
+  <PageHero
+    eyebrow="Book a call"
+    title="Let's talk about your AWS production."
+    subtitle="A focused 15-minute call. No pitch. Just figuring out together if I'm the right fit."
+  />
+
+  <!-- Calendly inline widget -->
+  <section class="bg-white py-12">
+    <div class="container-wide">
+      <div
+        class="calendly-inline-widget rounded-lg overflow-hidden border border-slate-200"
+        data-url={calendlyUrl}
+        style="min-width:320px;height:720px;"
+      ></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <noscript>
+        <p class="text-center text-slate-600 mt-6">
+          JavaScript is required for the booking widget.
+          <a href={calendlyUrl} class="link-underline" target="_blank" rel="noopener">
+            Open scheduler in a new tab →
+          </a>
+        </p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- What to expect -->
+  <section class="bg-slate-50 py-20">
+    <div class="container-wide">
+      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">What to expect</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-12 max-w-2xl">
+        15 minutes · Google Meet · No commitment.
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="text-3xl font-bold text-navy-900 mb-2">Before</div>
+          <h3 class="text-lg font-semibold text-navy-900 mb-3">A few quick questions</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Calendly will ask you for your company name, what AWS problem you're trying to solve, and optionally your approximate AWS spend. Two minutes, tops.
+          </p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-navy-900 mb-2">During</div>
+          <h3 class="text-lg font-semibold text-navy-900 mb-3">Honest read</h3>
+          <p class="text-slate-600 leading-relaxed">
+            You walk me through what's going on with your AWS production. I tell you straight whether I think I can help — and what shape that engagement would look like if so.
+          </p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-navy-900 mb-2">After</div>
+          <h3 class="text-lg font-semibold text-navy-900 mb-3">Next steps if it fits</h3>
+          <p class="text-slate-600 leading-relaxed">
+            If we're a fit, I send a one-page scope and proposal within 48 hours. If we're not, I tell you why and (where I can) point you toward who might be a better match.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prefer email fallback -->
+  <section class="bg-white py-16 border-t border-slate-200">
+    <div class="container-wide text-center">
+      <p class="text-slate-600">
+        Prefer email?
+        <a href="/contact" class="link-underline font-medium">Reach me directly at david@davidplappert.com →</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
