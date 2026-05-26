@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const faqs = [
+  {
+    q: "Who is David Plappert?",
+    a: "David Plappert is a Fractional AWS Reliability Lead based in Peoria, Illinois. He holds US Patent 11,146,689 in cloud architecture, has won the AWS City on a Cloud Innovation Award twice (2016 and 2018), and has 20 years of AWS experience since EC2 beta in 2006. He works with Fortune 100 and mid-market companies whose revenue depends on AWS uptime."
+  },
+  {
+    q: "What is a Fractional AWS Reliability Lead?",
+    a: "A Fractional AWS Reliability Lead is a senior AWS architect who works part-time (typically 10-20 hours per week) inside a client organization, providing production reliability oversight, architecture review, vendor-shipped infrastructure gatekeeping, and senior escalation coverage. It is the senior IC role companies need but cannot justify hiring full-time."
+  },
+  {
+    q: "How much does David charge?",
+    a: "Engagements are priced by scope: Fractional AWS Reliability Lead retainers run $25,000 to $45,000 per month for 10-20 hours per week. AWS Production Audits run $25,000 to $50,000 as a fixed-scope 4-6 week project. Vendor Technical Oversight engagements run $50,000 to $100,000 over 3-6 months. Strategic Cloud Advisory retainers run $5,000 to $10,000 per month for approximately 4 hours of senior counsel."
+  },
+  {
+    q: "What companies does David work with?",
+    a: "David works with Fortune 100 and mid-market companies running revenue-critical AWS systems. Past clients include state-based healthcare insurance exchanges (DCHBX, Massachusetts Health Connector, CoverME, DC Department of Behavioral Health) and current work spans Fortune 100 industrial sector engagements. He does not take on junior implementation labor, full-time on-site engagements, or pre-revenue startups."
+  },
+  {
+    q: "Does David work remotely?",
+    a: "Yes. All current and past engagements have been remote. David is based in Peoria, Illinois, and works with clients globally."
+  },
+  {
+    q: "What is the AWS City on a Cloud Award?",
+    a: "The AWS City on a Cloud Innovation Challenge is an annual Amazon Web Services award recognizing innovative cloud solutions, primarily in government and public sector work. David received the award in 2016 and 2018 during his tenure at IdeaCrew for work on state-based healthcare insurance exchanges."
+  },
+  {
+    q: "What is David's US Patent for?",
+    a: "US Patent 11,146,689 covers cloud architecture, issued October 12, 2021. It can be reviewed at https://patents.google.com/patent/US11146689."
+  },
+  {
+    q: "How do I hire David?",
+    a: "Email david@davidplappert.com with your company name and size, the AWS systems you're running, the problem you're trying to solve, and whether you're thinking retainer, project, or open scope. David responds to legitimate inquiries within 48 hours."
+  },
+  {
+    q: "Can David do AWS cost optimization?",
+    a: "Yes. The AWS Production Audit service includes a full cloud cost analysis. Typical findings show 30-40% of AWS spend is recoverable waste — under-utilized capacity, ungoverned NAT Gateway placement, unoptimized storage tiers, and orphaned resources. The audit produces a prioritized remediation roadmap with effort estimates."
+  },
+  {
+    q: "What AWS services does David specialize in?",
+    a: "David's AWS specialization spans Lambda, EKS, ECS, S3, CloudFront, RDS, DynamoDB, API Gateway, EventBridge, Step Functions, and the full serverless ecosystem. His production scale credentials include healthcare exchange systems on AWS serverless processing over $500 million per year in payments, video streaming platforms with 99.9% uptime, and current work on a high-revenue commerce platform shipping monthly vendor-built CDK releases."
+  },
+  {
+    q: "Does David work with vendor-shipped AWS systems?",
+    a: "Yes — vendor technical oversight is one of David's specialty engagements. When a vendor builds your AWS infrastructure on a monthly release cadence and you need senior buy-side gatekeeping to ensure each release is production-ready, that's the engagement David specializes in. He currently provides this for a Fortune 100 client on a $5-10 million annual vendor contract."
+  },
+  {
+    q: "Where can I see David's writing or speaking?",
+    a: "David's case studies are published at https://davidplappert.com/case-studies. Long-form articles and LinkedIn posts are at https://www.linkedin.com/in/davidplappert."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.a
+    }
+  }))
+};
+---
+<BaseLayout
+  title="FAQ — Common Questions About Working with David Plappert"
+  description="Frequently asked questions about Fractional AWS Reliability Lead engagements with David Plappert: pricing, services, scope, credentials, and how to engage."
+  schema={faqSchema}
+>
+  <PageHero
+    eyebrow="Frequently asked questions"
+    title="Common questions about working with David."
+    subtitle="If your question isn't here, email david@davidplappert.com — answered within 48 hours."
+  />
+
+  <div class="container-prose py-20">
+    <dl class="space-y-10">
+      {
+        faqs.map((f) => (
+          <div class="border-b border-slate-200 pb-8 last:border-b-0">
+            <dt class="text-xl font-semibold text-navy-900 mb-3">{f.q}</dt>
+            <dd class="text-slate-700 leading-relaxed">{f.a}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+
+  <section class="bg-navy-900 text-white py-20">
+    <div class="container-wide text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Still have questions?</h2>
+      <a
+        href="/contact"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-900 font-semibold rounded-md hover:bg-slate-100 transition-colors"
+      >
+        Get in touch <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

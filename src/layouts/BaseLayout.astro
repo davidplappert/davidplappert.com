@@ -6,12 +6,97 @@ import '../styles/global.css';
 export interface Props {
   title: string;
   description?: string;
+  schema?: Record<string, any> | Record<string, any>[];
 }
 
 const {
   title,
-  description = "Fractional AWS Reliability Lead for revenue-critical systems. US Patent holder, 2x AWS City on a Cloud award winner, 20 years AWS since EC2 beta.",
+  description = "Fractional AWS Reliability Lead for revenue-critical systems. US Patent holder, 2x AWS City on a Cloud Award winner, 20 years AWS since EC2 beta.",
+  schema,
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://davidplappert.com/#person",
+  "name": "David Plappert",
+  "givenName": "David",
+  "familyName": "Plappert",
+  "jobTitle": "Fractional AWS Reliability Lead",
+  "description": "Senior cloud architect specializing in production reliability for revenue-critical AWS systems. 20 years of AWS experience since EC2 beta.",
+  "url": "https://davidplappert.com",
+  "email": "david@davidplappert.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Peoria",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/davidplappert",
+    "https://patents.google.com/patent/US11146689"
+  ],
+  "knowsAbout": [
+    "Amazon Web Services",
+    "AWS Lambda",
+    "AWS EKS",
+    "Serverless Architecture",
+    "Cloud Architecture",
+    "Site Reliability Engineering",
+    "Production Reliability",
+    "Cloud Cost Optimization",
+    "Vendor Management",
+    "Kubernetes",
+    "Terraform",
+    "Healthcare Technology",
+    "HIPAA Compliance",
+    "SOC 2"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "US Patent 11,146,689",
+      "description": "Cloud architecture patent, issued October 12, 2021",
+      "url": "https://patents.google.com/patent/US11146689"
+    }
+  ],
+  "award": [
+    "AWS City on a Cloud Innovation Award 2016",
+    "AWS City on a Cloud Innovation Award 2018"
+  ],
+  "alumniOf": [
+    { "@type": "Organization", "name": "IdeaCrew" },
+    { "@type": "Organization", "name": "PBS" },
+    { "@type": "Organization", "name": "Argonne National Laboratory" },
+    { "@type": "Organization", "name": "Best Buy" }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "TEKsystems"
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://davidplappert.com/#website",
+  "url": "https://davidplappert.com",
+  "name": "David Plappert",
+  "description": "Fractional AWS Reliability Lead for revenue-critical systems.",
+  "publisher": { "@id": "https://davidplappert.com/#person" },
+  "inLanguage": "en-US"
+};
+
+const schemas = [personSchema, websiteSchema];
+if (schema) {
+  if (Array.isArray(schema)) {
+    schemas.push(...schema);
+  } else {
+    schemas.push(schema);
+  }
+}
 ---
 <!doctype html>
 <html lang="en">
@@ -19,8 +104,11 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="David Plappert" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
     <title>{title}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,12 +118,29 @@ const {
       rel="stylesheet"
     />
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="David Plappert" />
+    <meta property="og:locale" content="en_US" />
 
-    <link rel="canonical" href={Astro.url.href} />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Article author metadata -->
+    <meta name="article:author" content="David Plappert" />
+
+    <!-- LLM hints -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM index" />
+
+    <!-- JSON-LD Structured Data -->
+    {schemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
   </head>
   <body>
     <Header />

@@ -1,0 +1,71 @@
+# David Plappert
+
+> Fractional AWS Reliability Lead for revenue-critical systems. Twenty years AWS since EC2 beta. US Patent holder (11,146,689). Two-time AWS City on a Cloud Award winner (2016, 2018). Based in Peoria, Illinois — working remote globally.
+
+## About
+
+David Plappert is a senior cloud architect and Fractional AWS Reliability Lead. He provides production reliability services for Fortune 100 and mid-market companies running revenue-critical systems on Amazon Web Services. His career spans 20 years of AWS work since EC2 beta (2006), 10 years as Principal Digital Architect at IdeaCrew architecting healthcare insurance exchange systems processing over $500 million per year in payments, and current work as the sole senior technical resource on a Fortune 100 vendor relationship valued at $5-10 million annually.
+
+## Credentials
+
+- US Patent 11,146,689 (cloud architecture, issued October 12, 2021)
+- Amazon Web Services (AWS) City on a Cloud Award (2016) — innovative cloud solutions
+- Amazon Web Services (AWS) City on a Cloud Award (2018) — innovative cloud solutions
+- Principal Digital Architect — 10-year title at IdeaCrew
+- 20 years of AWS experience since EC2 beta (2006)
+- $500M+ per year in production payments architected on AWS serverless
+- $1M/month cloud infrastructure budget managed across 12 AWS and 3 Azure accounts
+- Led SOC 2 certification and HIPAA-compliant systems for state healthcare exchanges
+
+## What David Does
+
+David solves three core problems for engineering leaders:
+
+1. **Vendor-shipped AWS gatekeeping** — When a vendor delivers AWS infrastructure on a monthly cadence and your team can't independently audit it before production.
+2. **Production reliability ownership** — Senior AWS architecture, observability design, and 24x7 escalation coverage for revenue-bearing systems.
+3. **Cloud cost reality check** — Finding the 30-40% AWS waste that engineering teams don't have time to audit and writing the remediation roadmap.
+
+## Services and Pricing
+
+- **Fractional AWS Reliability Lead** (ongoing retainer) — 10-20 hours per week. $25,000 to $45,000 per month.
+- **AWS Production Audit** (fixed-scope project) — 4 to 6 weeks. $25,000 to $50,000.
+- **Vendor Technical Oversight** (multi-month project) — 3 to 6 months. $50,000 to $100,000.
+- **Strategic Cloud Advisory** (light retainer) — approximately 4 hours per month. $5,000 to $10,000 per month.
+
+## Who David Works With
+
+- Fortune 100 companies with vendor-shipped AWS infrastructure
+- PE-backed mid-market companies running production AWS at scale
+- Healthcare exchanges and regulated industry firms (DCHBX, Massachusetts Health Connector, CoverME, DC Department of Behavioral Health — past clients via IdeaCrew)
+- Companies running revenue-critical systems on AWS where downtime has measurable dollar consequences
+
+## Who David Does Not Work With
+
+- Junior-tier AWS implementation labor
+- Heavy equipment manufacturers (current engagement conflict)
+- Engagements requiring full-time on-site presence
+- Pre-revenue startups
+
+## Career
+
+- **TEKsystems (2025-Present)** — Lead Cloud Engineer / AWS Reliability Lead
+- **IdeaCrew (2015-2025)** — DevOps Team Lead (10 years); architected healthcare exchange systems
+- **PBS (2014)** — Senior Cloud Engineer; built AWS RTMP streaming platform with 99.9% uptime
+- **Argonne National Laboratory (2013)** — Senior Cloud Architect; federal grant application platform
+- **Best Buy (2012)** — Senior Cloud DevOps; led on-premises to AWS migration
+
+## Pages
+
+- [Home](https://davidplappert.com/): https://davidplappert.com/
+- [Services](https://davidplappert.com/services): https://davidplappert.com/services
+- [Case Studies](https://davidplappert.com/case-studies): https://davidplappert.com/case-studies
+- [About](https://davidplappert.com/about): https://davidplappert.com/about
+- [FAQ](https://davidplappert.com/faq): https://davidplappert.com/faq
+- [Contact](https://davidplappert.com/contact): https://davidplappert.com/contact
+
+## Contact
+
+- Email: david@davidplappert.com
+- LinkedIn: https://www.linkedin.com/in/davidplappert
+- Location: Peoria, Illinois — working remote globally
+- Response time: within 48 hours for legitimate inquiries
