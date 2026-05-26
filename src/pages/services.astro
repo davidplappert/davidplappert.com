@@ -6,7 +6,7 @@ const services = [
   {
     num: '01',
     title: 'Fractional AWS Reliability Lead',
-    type: 'Ongoing retainer',
+    type: 'Ongoing retainer · 10–20 hrs/week',
     summary:
       'A senior AWS practitioner in the seat for ongoing production reliability. The role your team needs but can\'t justify hiring full-time.',
     includes: [
@@ -16,13 +16,11 @@ const services = [
       'Observability and alerting design',
       'Cross-team senior escalation availability',
     ],
-    commitment: '10–20 hrs/week',
-    fee: '$25K–$45K/month',
   },
   {
     num: '02',
     title: 'AWS Production Audit',
-    type: 'Fixed-scope project',
+    type: 'Fixed-scope project · 4–6 weeks',
     summary:
       'A senior-level production reliability assessment of your AWS environment with a remediation roadmap your team can execute against.',
     includes: [
@@ -32,13 +30,11 @@ const services = [
       'Prioritized remediation roadmap with effort estimates',
       'Executive summary for leadership and engineering plan for the team',
     ],
-    commitment: '4–6 weeks',
-    fee: '$25K–$50K',
   },
   {
     num: '03',
     title: 'Vendor Technical Oversight',
-    type: 'Multi-month project',
+    type: 'Multi-month project · 3–6 months',
     summary:
       'For companies running mission-critical AWS infrastructure built and shipped by a vendor. I sit on your side of the table, technically.',
     includes: [
@@ -48,13 +44,11 @@ const services = [
       'Vendor performance accountability framework',
       'Production architecture for downstream consumers',
     ],
-    commitment: '3–6 months',
-    fee: '$50K–$100K',
   },
   {
     num: '04',
     title: 'Strategic Cloud Advisory',
-    type: 'Light retainer',
+    type: 'Light retainer · ~4 hrs/month',
     summary:
       'Senior cloud architecture counsel on retainer. Monthly check-ins, ad-hoc advisory, decision review for engineering leaders.',
     includes: [
@@ -63,8 +57,6 @@ const services = [
       'Decision review on major AWS architecture choices',
       'Quarterly cloud strategy alignment',
     ],
-    commitment: '~4 hrs/month',
-    fee: '$5K–$10K/month',
   },
 ];
 ---
@@ -89,19 +81,9 @@ const services = [
           <div class="md:col-span-2">
             <p class="text-lg text-slate-700 mb-6 leading-relaxed">{service.summary}</p>
             <h3 class="font-semibold text-navy-900 mb-3">What's included</h3>
-            <ul class="space-y-2 text-slate-700 mb-6">
+            <ul class="space-y-2 text-slate-700">
               {service.includes.map((item) => <li>→ {item}</li>)}
             </ul>
-            <div class="grid grid-cols-2 gap-4 mt-6">
-              <div>
-                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Commitment</p>
-                <p class="font-semibold text-navy-900">{service.commitment}</p>
-              </div>
-              <div>
-                <p class="text-xs text-slate-500 uppercase tracking-wider mb-1">Fee</p>
-                <p class="font-semibold text-navy-900">{service.fee}</p>
-              </div>
-            </div>
           </div>
         </div>
       ))

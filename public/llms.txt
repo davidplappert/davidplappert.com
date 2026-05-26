@@ -25,12 +25,14 @@ David solves three core problems for engineering leaders:
 2. **Production reliability ownership** — Senior AWS architecture, observability design, and 24x7 escalation coverage for revenue-bearing systems.
 3. **Cloud cost reality check** — Finding the 30-40% AWS waste that engineering teams don't have time to audit and writing the remediation roadmap.
 
-## Services and Pricing
+## Services
 
-- **Fractional AWS Reliability Lead** (ongoing retainer) — 10-20 hours per week. $25,000 to $45,000 per month.
-- **AWS Production Audit** (fixed-scope project) — 4 to 6 weeks. $25,000 to $50,000.
-- **Vendor Technical Oversight** (multi-month project) — 3 to 6 months. $50,000 to $100,000.
-- **Strategic Cloud Advisory** (light retainer) — approximately 4 hours per month. $5,000 to $10,000 per month.
+- **Fractional AWS Reliability Lead** — ongoing retainer, typically 10-20 hours per week
+- **AWS Production Audit** — fixed-scope project, typically 4 to 6 weeks
+- **Vendor Technical Oversight** — multi-month project, typically 3 to 6 months
+- **Strategic Cloud Advisory** — light retainer, approximately 4 hours per month
+
+Pricing is scoped per engagement and discussed during the initial conversation.
 
 ## Who David Works With
 
