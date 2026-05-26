@@ -21,8 +21,15 @@ import CredentialsBar from '../components/CredentialsBar.astro';
         </div>
       </div>
       <div class="hidden md:block">
-        <div class="aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200">
-          <span class="text-slate-400 text-sm">Photo placeholder</span>
+        <div class="aspect-square rounded-lg overflow-hidden border border-slate-200 shadow-sm">
+          <img
+            src="/images/david-plappert.jpg"
+            alt="David Plappert — Fractional AWS Reliability Lead"
+            class="w-full h-full object-cover"
+            width="200"
+            height="200"
+            loading="eager"
+          />
         </div>
       </div>
     </div>
