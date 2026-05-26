@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const credentials = [
+  { title: 'US Patent 11,146,689', detail: 'Cloud architecture, issued October 12, 2021' },
+  { title: 'AWS City on a Cloud Award (2016)', detail: 'Innovative cloud solutions' },
+  { title: 'AWS City on a Cloud Award (2018)', detail: 'Innovative cloud solutions' },
+  { title: 'Principal Digital Architect', detail: '10-year title at prior employer' },
+  { title: '20 years AWS', detail: 'Since EC2 beta launch in 2006' },
+  { title: '$500M+ per year', detail: 'In production payments processed on AWS serverless' },
+  { title: '$1M/month cloud budget', detail: 'Managed across 12 AWS and 3 Azure accounts' },
+];
+
+const roles = [
+  {
+    title: 'Lead Cloud Engineer / AWS Reliability Lead',
+    org: 'TEKsystems',
+    period: 'Sept 2025 – Present · Remote',
+    body: 'Sole senior technical resource for a Fortune 100 vendor relationship valued at $5–10M/year. Sole 24x7 on-call for production AWS. Cross-team senior escalation across two engineering teams. Architecture for ~30 downstream consumer systems.',
+  },
+  {
+    title: 'DevOps Team Lead',
+    org: 'IdeaCrew',
+    period: '2015 – 2025 · Remote',
+    body: 'Led 7-member engineering team managing $1M/month AWS+Azure budget across 12 AWS accounts and 3 Azure accounts. Architected and operated production AWS systems processing $500M+ per year in healthcare insurance payments for state-based exchanges including DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. Earned AWS City on a Cloud awards in 2016 and 2018.',
+  },
+  {
+    title: 'Senior Cloud Engineer',
+    org: 'PBS',
+    period: '2014',
+    body: 'Built and managed AWS-based RTMP video streaming platform with 99.9% uptime. Implemented adaptive bandwidth modulation, increasing viewer watch time by 158%. Managed two-person development team.',
+  },
+  {
+    title: 'Senior Cloud Architect',
+    org: 'Argonne National Laboratory',
+    period: '2013',
+    body: 'Designed and implemented PHP web application for federal grant applications. Streamlined grant workflows, driving 283% increase in revenue.',
+  },
+  {
+    title: 'Senior Cloud DevOps',
+    org: 'Best Buy',
+    period: '2012',
+    body: 'Led migration from on-premises to AWS across enterprise teams including BestBuy.com, POS, and New Product Ingestion. Reduced infrastructure costs by over 50%. Led 6-member DevOps engineering team.',
+  },
+];
+---
+<BaseLayout title="About — David Plappert">
+  <PageHero eyebrow="About" title="20 years of production AWS, since EC2 beta." />
+
+  <div class="container-prose py-20">
+    <div class="grid md:grid-cols-3 gap-12 mb-16">
+      <div>
+        <div class="aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200">
+          <span class="text-slate-400 text-sm">Photo placeholder</span>
+        </div>
+      </div>
+      <div class="md:col-span-2 space-y-6 text-lg leading-relaxed text-slate-700">
+        <p>
+          I'm David Plappert. I've been building on AWS since EC2 was in beta in 2006. That makes me part of the original cloud cohort — a few thousand engineers worldwide who watched AWS grow from a curiosity into the platform that runs half the internet.
+        </p>
+        <p>
+          For the last decade, my focus has been production reliability of revenue-bearing AWS systems. Healthcare exchanges processing $500M+/year. Fortune 100 vendor contracts in the eight figures. Streaming platforms with 99.9% uptime expectations. The work where downtime has measurable dollar consequences.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-navy-900 mt-12 mb-6">Credentials</h2>
+    <ul class="space-y-3 text-slate-700">
+      {
+        credentials.map((c) => (
+          <li class="border-l-2 border-accent pl-4">
+            <strong class="text-navy-900">{c.title}</strong>
+            <span class="text-slate-600"> — {c.detail}</span>
+          </li>
+        ))
+      }
+    </ul>
+
+    <h2 class="text-2xl font-bold text-navy-900 mt-16 mb-6">Career</h2>
+    <div class="space-y-8">
+      {
+        roles.map((r) => (
+          <div>
+            <h3 class="font-semibold text-navy-900 text-lg">{r.title}</h3>
+            <p class="text-sm text-slate-500 mb-2">{r.org} · {r.period}</p>
+            <p class="text-slate-700 leading-relaxed">{r.body}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <h2 class="text-2xl font-bold text-navy-900 mt-16 mb-4">Why fractional</h2>
+    <p class="text-lg text-slate-700 leading-relaxed mb-4">
+      I work fractional because the companies whose AWS production is most critical rarely need a full-time senior AWS architect, but they urgently need the role to exist. A ten-to-twenty-hour weekly fractional engagement at the senior level delivers more value than a junior full-time hire — especially for vendor-shipped infrastructure, production reliability, and cost optimization work.
+    </p>
+    <p class="text-lg text-slate-700 leading-relaxed">
+      If that sounds like the gap on your team, let's talk.
+    </p>
+  </div>
+
+  <section class="bg-navy-900 text-white py-20">
+    <div class="container-wide text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's work together.</h2>
+      <a
+        href="/contact"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-900 font-semibold rounded-md hover:bg-slate-100 transition-colors"
+      >
+        Schedule a call <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

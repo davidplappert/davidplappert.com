@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CredentialsBar from '../components/CredentialsBar.astro';
+---
+<BaseLayout title="David Plappert — Fractional AWS Reliability Lead">
+  <section class="bg-white">
+    <div class="container-wide py-20 md:py-28 grid md:grid-cols-3 gap-12 items-center">
+      <div class="md:col-span-2">
+        <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-4">
+          Fractional AWS Reliability Lead
+        </p>
+        <h1 class="text-5xl md:text-6xl font-bold text-navy-900 leading-tight">
+          Production reliability for revenue-critical AWS systems.
+        </h1>
+        <p class="text-xl text-slate-600 mt-6 leading-relaxed max-w-2xl">
+          I sit between vendor-shipped cloud platforms and your production for Fortune 100 and mid-market companies whose revenue depends on AWS uptime.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="/services" class="btn-primary">See how I work</a>
+          <a href="/contact" class="btn-secondary">Schedule a call</a>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200">
+          <span class="text-slate-400 text-sm">Photo placeholder</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CredentialsBar />
+
+  <section class="bg-white py-20">
+    <div class="container-wide">
+      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">What I do</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-12 max-w-2xl">
+        Three problems I solve for engineering leaders.
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 transition-colors">
+          <div class="text-3xl font-bold text-navy-900 mb-2">01</div>
+          <h3 class="text-xl font-semibold text-navy-900 mb-3">
+            Vendor-shipped AWS gatekeeping
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            When your vendor delivers AWS infrastructure that ships monthly and breaks unpredictably, I'm the senior layer between them and your production.
+          </p>
+        </div>
+        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 transition-colors">
+          <div class="text-3xl font-bold text-navy-900 mb-2">02</div>
+          <h3 class="text-xl font-semibold text-navy-900 mb-3">
+            Production reliability ownership
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            Senior AWS architecture, observability design, and 24x7 escalation coverage for revenue-bearing systems. The senior in the seat when your team doesn't have one.
+          </p>
+        </div>
+        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 transition-colors">
+          <div class="text-3xl font-bold text-navy-900 mb-2">03</div>
+          <h3 class="text-xl font-semibold text-navy-900 mb-3">
+            Cloud cost reality check
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            The 30-40% your AWS bill is overpaying because nobody on the team has time to audit it. I find the waste and write the remediation roadmap.
+          </p>
+        </div>
+      </div>
+      <div class="mt-12">
+        <a href="/services" class="link-underline font-medium">See full services and pricing →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="container-wide">
+      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">Featured story</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
+        $500M/year on AWS serverless.
+      </h2>
+      <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
+        Architected and operated the AWS systems behind state-based healthcare insurance exchanges processing over half a billion dollars in payments annually. Led the migration that holds the record for the fastest state-based exchange transition off FedHub.
+      </p>
+      <a href="/case-studies" class="link-underline font-medium">Read the case studies →</a>
+    </div>
+  </section>
+
+  <section class="bg-navy-900 text-white py-20">
+    <div class="container-wide text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to talk?</h2>
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+        Fractional engagements start at five hours per week. Productized audits start at a defined scope. I work with companies whose AWS production matters.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-900 font-semibold rounded-md hover:bg-slate-100 transition-colors"
+      >
+        Schedule a call <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
