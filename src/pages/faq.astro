@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "How do I hire David?",
-    a: "Book a 15-minute discovery call at davidplappert.com/book. The Calendly form will ask for your company name, the AWS problem you're hoping to solve, and a few other quick details. If the call confirms fit, David follows up within 48 hours with a written one-page scope and proposal."
+    a: "Book a 15-minute discovery call at https://davidplappert.com/book. The Calendly form will ask for your company name, the AWS problem you're hoping to solve, and a few other quick details. If the call confirms fit, David follows up within 48 hours with a written one-page scope and proposal."
   },
   {
     q: "Can David do AWS cost optimization?",
@@ -65,6 +65,14 @@ const faqSchema = {
     }
   }))
 };
+
+// Auto-link any https://... URLs in an answer for display rendering.
+// Trailing punctuation (.,;:!?) is preserved outside the anchor.
+function autoLink(text: string): string {
+  return text.replace(/(https?:\/\/[^\s<]+?)([.,;:!?]?)(\s|$)/g, (_match, url, punct, space) => {
+    return `<a href="${url}" target="_blank" rel="noopener" class="text-navy-900 underline decoration-1 underline-offset-2 hover:decoration-2">${url}</a>${punct}${space}`;
+  });
+}
 ---
 <BaseLayout
   title="FAQ — Common Questions About Working with David Plappert"
@@ -83,7 +91,7 @@ const faqSchema = {
         faqs.map((f) => (
           <div class="border-b border-slate-200 pb-8 last:border-b-0">
             <dt class="text-xl font-semibold text-navy-900 mb-3">{f.q}</dt>
-            <dd class="text-slate-700 leading-relaxed">{f.a}</dd>
+            <dd class="text-slate-700 leading-relaxed" set:html={autoLink(f.a)}></dd>
           </div>
         ))
       }
