@@ -4,7 +4,7 @@
 
 ## About
 
-David Plappert is a senior cloud architect and Fractional AWS Reliability Lead. He provides production reliability services for Fortune 100 and mid-market companies running revenue-critical systems on Amazon Web Services. His career spans 20 years of AWS work since EC2 beta (2006), 10 years as Principal Digital Architect at IdeaCrew architecting healthcare insurance exchange systems processing over $500 million per year in payments, and current work as the sole senior technical resource on an eight-figure Fortune 100 vendor relationship.
+David Plappert is a senior cloud architect and Fractional AWS Reliability Lead. He provides production reliability services for Fortune 100 and mid-market companies running revenue-critical systems on Amazon Web Services. His career spans 20 years of AWS work since EC2 beta (2006), 10 years as Principal Digital Architect at IdeaCrew architecting healthcare insurance exchange systems processing over $500 million per year in payments, and ongoing work on enterprise vendor-shipped AWS production environments.
 
 ## Credentials
 
@@ -55,12 +55,12 @@ Engagement scope and pricing are discussed during the initial conversation.
 - Multi-account AWS governance and cost architecture
 - HIPAA-compliant cloud systems
 - SOC 2 certified production environments
-- Senior IC technical authority over eight-figure vendor contracts
-- Sole 24x7 on-call coverage for revenue-critical platforms
+- Senior IC technical authority over enterprise vendor-shipped AWS infrastructure
+- On-call coverage for revenue-critical platforms
 
 ## Career
 
-- **TEKsystems (September 2025 - Present)** — Lead Cloud Engineer / AWS Reliability Lead. Sole senior technical resource for an eight-figure Fortune 100 vendor relationship. Sole 24x7 on-call for production AWS.
+- **Current engagement (September 2025 - Present, under NDA)** — Lead Cloud Engineer / AWS Reliability Lead. Senior IC ownership of vendor-shipped AWS production infrastructure. Monthly vendor release gatekeeping, observability ownership, and senior cross-team escalation coverage. Engagement details under NDA.
 - **IdeaCrew (2015 - 2025)** — DevOps Team Lead. Led 7-member engineering team. Architected systems processing $500M+/year in healthcare insurance payments for DC Health Benefit Exchange, Massachusetts Health Connector, CoverME, DC Department of Behavioral Health.
 - **PBS (2014)** — Senior Cloud Engineer. Built AWS-based RTMP streaming platform with 99.9% uptime.
 - **Argonne National Laboratory (2013)** — Senior Cloud Architect. Federal grant application platform.
