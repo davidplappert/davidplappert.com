@@ -18,8 +18,9 @@ const credentials = [
     detail: "IdeaCrew's open-source cloud technology recognized for the second time",
     url: 'https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm',
   },
-  { title: 'Principal Digital Architect', detail: '10-year title at IdeaCrew' },
-  { title: '20 years AWS', detail: 'Since EC2 beta launch in 2006' },
+  { title: 'Principal Cloud Architect & DevOps Lead', detail: '10-year tenure at IdeaCrew' },
+  { title: '19 years on AWS', detail: 'Since EC2 beta in 2007' },
+  { title: '18F advisor (federal digital services, GSA)', detail: 'AWS architecture consultation on state-government health exchange replication during IdeaCrew tenure' },
   { title: '$500M+ per year', detail: 'In production payments processed on AWS serverless' },
   { title: '$1M/month cloud budget', detail: 'Managed across 12 AWS and 3 Azure accounts' },
 ];
@@ -27,15 +28,15 @@ const credentials = [
 const roles = [
   {
     title: 'Lead Cloud Engineer / AWS Reliability Lead',
-    org: 'Current engagement (under NDA)',
-    period: 'Sept 2025 – Present · Remote',
-    body: 'Senior IC ownership of vendor-shipped AWS production infrastructure. Monthly vendor release gatekeeping, observability ownership, and senior cross-team escalation coverage. Engagement details under NDA.',
+    org: 'Caterpillar Inc. (via TEKsystems)',
+    period: 'Sept 2025 – Present · Onsite, Mossville Tech Center, IL',
+    body: 'AWS reliability lead for Vertex 3D, Caterpillar\'s real-time 3D collaboration platform powering aftermarket commerce. Sole Caterpillar-side reviewer of monthly vendor-shipped AWS CDK releases — extensive pre-deploy testing and architectural review. Own load testing, monitoring, and alerting strategy across production. Technical lead for Caterpillar\'s Node.js workstream on Vertex 3D and cross-team escalation point across both AWS and Node.js stacks. Built AI-assisted operations workflow using Claude Code that handles deployments, dry-runs, automated bug detection and ticket filing, and end-to-end CI/CD orchestration.',
   },
   {
-    title: 'DevOps Team Lead',
+    title: 'Principal Cloud Architect & DevOps Lead',
     org: 'IdeaCrew',
     period: '2015 – 2025 · Remote',
-    body: 'Led 7-member engineering team managing $1M/month AWS+Azure budget across 12 AWS accounts and 3 Azure accounts. Architected and operated production AWS systems processing $500M+ per year in healthcare insurance payments for state-based exchanges including DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. Earned AWS City on a Cloud awards in 2016 and 2018.',
+    body: 'Employee #3; led cloud architecture and DevOps as the company grew past 100 employees. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts supporting client engagements worth >$50M annually. Owned the AWS architecture that won 2× AWS City on a Cloud awards (2016, 2018) on the DC Health Benefit Exchange platform. Final escalation point for production incidents across every client engagement, backed by extensive New Relic observability. Served as 18F advisor on AWS architecture for state-government health exchange replication. Led multi-year state health insurance migrations from federal FedHub to state-based exchanges including DCHBX, Massachusetts Health Connector for Business, CoverME, and DC Department of Behavioral Health; team held the fastest transition record off FedHub. Led monolith-to-microservices migration onto AWS EKS, ECS, and Lambda.',
   },
   {
     title: 'Senior Cloud Engineer',
@@ -58,7 +59,7 @@ const roles = [
 ];
 ---
 <BaseLayout title="About — David Plappert">
-  <PageHero eyebrow="About" title="20 years of production AWS, since EC2 beta." />
+  <PageHero eyebrow="About" title="19 years of production AWS, since EC2 beta." />
 
   <div class="container-prose py-20">
     <div class="grid md:grid-cols-3 gap-12 mb-16">
@@ -79,7 +80,7 @@ const roles = [
       </div>
       <div class="md:col-span-2 space-y-6 text-lg leading-relaxed text-slate-700">
         <p>
-          I'm David Plappert. I've been building on AWS since EC2 was in beta in 2006. That makes me part of the original cloud cohort — a few thousand engineers worldwide who watched AWS grow from a curiosity into the platform that runs half the internet.
+          I'm David Plappert. I've been building on AWS since EC2 was in beta in 2007. That makes me part of the original cloud cohort — a few thousand engineers worldwide who watched AWS grow from a curiosity into the platform that runs half the internet.
         </p>
         <p>
           For the last decade, my focus has been production reliability of revenue-bearing AWS systems. Healthcare exchanges processing $500M+/year. Enterprise vendor-shipped AWS environments. Streaming platforms with 99.9% uptime expectations. The work where downtime has measurable dollar consequences.
