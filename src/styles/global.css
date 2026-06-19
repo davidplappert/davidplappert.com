@@ -20,10 +20,10 @@
     @apply max-w-6xl mx-auto px-6;
   }
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-6 py-3 bg-navy-900 text-white font-medium rounded-md hover:bg-navy-800 transition-colors;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-navy-900 text-white font-medium rounded-lg shadow-sm transition-all duration-200 hover:bg-navy-800 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
   }
   .btn-secondary {
-    @apply inline-flex items-center gap-2 px-6 py-3 border border-navy-900 text-navy-900 font-medium rounded-md hover:bg-navy-50 transition-colors;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-navy-200 text-navy-900 font-medium rounded-lg bg-white transition-all duration-200 hover:border-navy-900 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
   }
   .link-underline {
     @apply text-navy-900 underline decoration-1 underline-offset-2 hover:decoration-2;

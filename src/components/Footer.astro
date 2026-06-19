@@ -1,50 +1,22 @@
 ---
 const year = new Date().getFullYear();
+const SCHED_URL = 'https://calendar.app.google/ESxXiEQp9Ky2xTXf6';
 ---
-<footer class="border-t border-slate-200 bg-slate-50 mt-24">
-  <div class="container-wide py-12 grid md:grid-cols-3 gap-8">
-    <div>
-      <h3 class="font-semibold text-navy-900 mb-3">David Plappert</h3>
-      <p class="text-sm text-slate-600 leading-relaxed">
-        Fractional AWS Reliability Lead for revenue-critical systems.
-      </p>
-    </div>
-    <div>
-      <h3 class="font-semibold text-navy-900 mb-3">Site</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="/services" class="text-slate-600 hover:text-navy-900">Services</a></li>
-        <li><a href="/case-studies" class="text-slate-600 hover:text-navy-900">Case Studies</a></li>
-        <li><a href="/about" class="text-slate-600 hover:text-navy-900">About</a></li>
-        <li><a href="/faq" class="text-slate-600 hover:text-navy-900">FAQ</a></li>
-        <li><a href="/testimonials" class="text-slate-600 hover:text-navy-900">Testimonials</a></li>
-        <li><a href="/press" class="text-slate-600 hover:text-navy-900">Press</a></li>
-        <li><a href="/guides/vendor-shipped-aws-gatekeeping" class="text-slate-600 hover:text-navy-900">Guides</a></li>
-        <li><a href="/book" class="text-slate-600 hover:text-navy-900">Book a Call</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold text-navy-900 mb-3">Connect</h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <a href="/book" class="text-slate-600 hover:text-navy-900">
-            Book a call
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/davidplappert" target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://patents.google.com/patent/US11146689" target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">
-            US Patent 11,146,689
-          </a>
-        </li>
-      </ul>
-    </div>
+<footer class="border-t border-slate-200 bg-slate-50">
+  <div class="container-wide py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-slate-600">
+      David Plappert — Principal Cloud Architect &amp; AWS Reliability Lead
+    </p>
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+      <li><a href={SCHED_URL} target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">Schedule a call</a></li>
+      <li><a href="mailto:david@davidplappert.com" class="text-slate-600 hover:text-navy-900">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/davidplappert" target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">LinkedIn</a></li>
+      <li><a href="/David-Plappert-Resume.pdf" target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">Résumé (PDF)</a></li>
+      <li><a href="https://patents.google.com/patent/US11146689" target="_blank" rel="noopener" class="text-slate-600 hover:text-navy-900">US Patent 11,146,689</a></li>
+    </ul>
   </div>
   <div class="border-t border-slate-200">
-    <div class="container-wide py-6 text-center text-sm text-slate-500">
+    <div class="container-wide py-5 text-center text-sm text-slate-500">
       &copy; {year} David Plappert. All rights reserved.
     </div>
   </div>

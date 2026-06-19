@@ -1,39 +1,10 @@
 ---
-const currentPath = Astro.url.pathname;
-const isActive = (path: string) =>
-  currentPath === path || (path !== '/' && currentPath.startsWith(path));
-
-const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services' },
-  { href: '/case-studies', label: 'Case Studies' },
-  { href: '/about', label: 'About' },
-  { href: '/faq', label: 'FAQ' },
-];
+const SCHED_URL = 'https://calendar.app.google/ESxXiEQp9Ky2xTXf6';
 ---
 <header class="border-b border-slate-200 bg-white sticky top-0 z-50">
-  <div class="container-wide flex items-center justify-between py-5">
-    <a href="/" class="font-semibold text-lg text-navy-900">
-      David Plappert
-    </a>
-    <nav class="hidden md:flex items-center gap-8">
-      {
-        navItems.map((item) => (
-          <a
-            href={item.href}
-            class={`text-sm font-medium transition-colors ${
-              isActive(item.href)
-                ? 'text-navy-900'
-                : 'text-slate-600 hover:text-navy-900'
-            }`}
-          >
-            {item.label}
-          </a>
-        ))
-      }
-    </nav>
-    <a href="/book" class="btn-primary text-sm py-2 px-4 hidden sm:inline-flex">
-      Book a call <span aria-hidden="true">→</span>
+  <div class="container-wide flex items-center justify-end py-4">
+    <a href={SCHED_URL} target="_blank" rel="noopener" class="btn-primary text-sm py-2 px-4">
+      Schedule a call <span aria-hidden="true">→</span>
     </a>
   </div>
 </header>

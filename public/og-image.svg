@@ -12,7 +12,7 @@
   <rect x="0" y="0" width="1200" height="6" fill="#c2410c"/>
 
   <!-- Eyebrow / role label -->
-  <text x="80" y="160" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">FRACTIONAL AWS RELIABILITY LEAD</text>
+  <text x="80" y="160" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">PRINCIPAL CLOUD ARCHITECT · AWS RELIABILITY LEAD</text>
 
   <!-- Name -->
   <text x="80" y="240" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="80" font-weight="800">David Plappert</text>
@@ -29,7 +29,7 @@
   <text x="425" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">·</text>
   <text x="445" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">2× AWS City on a Cloud Award</text>
   <text x="880" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">·</text>
-  <text x="900" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">20 years AWS</text>
+  <text x="900" y="520" fill="#9fb3c8" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="500">19 years AWS</text>
 
   <!-- URL -->
   <text x="80" y="580" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">davidplappert.com</text>

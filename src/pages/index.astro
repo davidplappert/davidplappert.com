@@ -1,161 +1,59 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CredentialsBar from '../components/CredentialsBar.astro';
-import NewsletterSignup from '../components/NewsletterSignup.astro';
+
+const SCHED_URL = 'https://calendar.app.google/ESxXiEQp9Ky2xTXf6';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/davidplappert';
 ---
-<BaseLayout title="David Plappert — Fractional AWS Reliability Lead">
-  <section class="bg-white">
-    <div class="container-wide py-20 md:py-28 grid md:grid-cols-3 gap-12 items-center">
-      <div class="md:col-span-2">
-        <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-4">
-          Fractional AWS Reliability Lead
-        </p>
-        <h1 class="text-5xl md:text-6xl font-bold text-navy-900 leading-tight">
-          Production reliability for revenue-critical AWS systems.
-        </h1>
-        <p class="text-xl text-slate-600 mt-6 leading-relaxed max-w-2xl">
-          I sit between vendor-shipped cloud platforms and your production for Fortune 100 and mid-market companies whose revenue depends on AWS uptime.
-        </p>
-        <div class="flex flex-wrap gap-4 mt-8">
-          <a href="/services" class="btn-primary">See how I work</a>
-          <a href="/book" class="btn-secondary">Schedule a call</a>
-        </div>
-      </div>
-      <div class="hidden md:flex items-center justify-center">
-        <div class="relative w-72 h-72">
-          <!-- Accent backdrop disc -->
-          <div class="absolute inset-0 bg-accent rounded-full transform translate-x-4 translate-y-4 opacity-90"></div>
-          <!-- Photo -->
-          <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl ring-1 ring-slate-200">
+<BaseLayout
+  title="David Plappert — Principal Cloud Architect"
+  description="David Plappert — Principal Cloud Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta, US Patent holder, 2× AWS City on a Cloud Award winner. Open to senior and principal cloud roles."
+  header={false}
+  footer={false}
+>
+  <div class="min-h-screen flex flex-col">
+    <!-- Hero -->
+    <section class="flex-1 flex items-center justify-center bg-gradient-to-b from-white to-navy-50/60">
+      <div class="container-prose flex flex-col items-center text-center py-20">
+        <!-- Portrait -->
+        <div class="relative w-36 h-36 md:w-44 md:h-44 mb-9">
+          <div aria-hidden="true" class="absolute -inset-5 rounded-full bg-accent/15 blur-2xl"></div>
+          <div class="relative w-full h-full rounded-full overflow-hidden ring-4 ring-white shadow-xl">
             <img
               src="/images/david-plappert.jpg"
-              alt="David Plappert — Fractional AWS Reliability Lead"
-              class="w-full h-full object-cover scale-110"
-              width="200"
-              height="200"
+              alt="David Plappert — Principal Cloud Architect"
+              class="w-full h-full object-cover scale-110 translate-y-1.5"
+              width="176"
+              height="176"
               loading="eager"
+              decoding="async"
+              fetchpriority="high"
             />
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <CredentialsBar />
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-navy-900">David Plappert</h1>
+        <p class="mt-4 text-lg md:text-xl font-semibold text-accent">Principal Cloud Architect</p>
 
-  <section class="bg-white py-20">
-    <div class="container-wide">
-      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">What I do</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-12 max-w-2xl">
-        Three problems I solve.
-      </h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 hover:shadow-md transition-all">
-          <div class="flex items-center justify-between mb-4">
-            <div class="text-3xl font-bold text-navy-900">01</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-accent">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        <div class="mt-8 mb-1 h-px w-16 bg-slate-200"></div>
+
+        <div class="flex flex-col sm:flex-row gap-3 mt-8 w-full sm:w-auto">
+          <a href={SCHED_URL} target="_blank" rel="noopener" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
             </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-navy-900 mb-3">
-            Vendor-shipped AWS gatekeeping
-          </h3>
-          <p class="text-slate-600 leading-relaxed">
-            When your vendor delivers AWS infrastructure that ships monthly and breaks unpredictably, I'm the senior layer between them and your production.
-          </p>
-        </div>
-        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 hover:shadow-md transition-all">
-          <div class="flex items-center justify-between mb-4">
-            <div class="text-3xl font-bold text-navy-900">02</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-accent">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.651a3.75 3.75 0 0 1 0-5.303m5.304 0a3.75 3.75 0 0 1 0 5.303m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            Book a 30-minute call
+          </a>
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5" aria-hidden="true">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
             </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-navy-900 mb-3">
-            Production reliability ownership
-          </h3>
-          <p class="text-slate-600 leading-relaxed">
-            Senior AWS architecture, observability design, and 24x7 escalation coverage for revenue-bearing systems. The senior in the seat when your team doesn't have one.
-          </p>
-        </div>
-        <div class="p-8 border border-slate-200 rounded-lg hover:border-navy-900 hover:shadow-md transition-all">
-          <div class="flex items-center justify-between mb-4">
-            <div class="text-3xl font-bold text-navy-900">03</div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-accent">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold text-navy-900 mb-3">
-            Cloud cost reality check
-          </h3>
-          <p class="text-slate-600 leading-relaxed">
-            The waste your AWS bill carries because nobody on the team has time to audit it. I find it and write the remediation roadmap.
-          </p>
+            Connect on LinkedIn
+          </a>
         </div>
       </div>
-      <div class="mt-12">
-        <a href="/services" class="link-underline font-medium">See full services →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured testimonial -->
-  <section class="bg-white py-20 border-t border-slate-200">
-    <div class="container-prose text-center">
-      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-6">What clients say</p>
-      <blockquote class="text-3xl md:text-4xl font-semibold text-navy-900 leading-tight mb-6">
-        "David is a dev genius."
-      </blockquote>
-      <p class="text-slate-600 text-lg">
-        VP of IT · <span class="text-slate-500">Enterprise client</span>
-      </p>
-      <div class="mt-8">
-        <a href="/testimonials" class="link-underline font-medium">Read more →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-slate-50 py-20">
-    <div class="container-wide">
-      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">Featured story</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
-        $500M/year on AWS serverless.
-      </h2>
-      <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
-        Architected and operated the AWS systems behind state-based healthcare insurance exchanges processing over half a billion dollars in payments annually. Led the migration that holds the record for the fastest state-based exchange transition off FedHub.
-      </p>
-      <a href="/case-studies" class="link-underline font-medium">Read the case studies →</a>
-    </div>
-  </section>
-
-  <!-- Pillar guide teaser -->
-  <section class="bg-white py-20 border-t border-slate-200">
-    <div class="container-wide">
-      <p class="text-sm text-accent font-semibold uppercase tracking-wider mb-3">Guide</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6 max-w-3xl">
-        What is Vendor-Shipped AWS Gatekeeping?
-      </h2>
-      <p class="text-xl text-slate-600 leading-relaxed max-w-3xl mb-8">
-        A practitioner's guide to the senior IC discipline that sits between vendor releases and your production. Definitions, failure modes, a five-step framework, and when the role earns its rate.
-      </p>
-      <a href="/guides/vendor-shipped-aws-gatekeeping" class="link-underline font-medium">Read the guide →</a>
-    </div>
-  </section>
-
-  <NewsletterSignup />
-
-  <section class="bg-navy-900 text-white py-20">
-    <div class="container-wide text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to talk?</h2>
-      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-        Fractional engagements start at five hours per week. Productized audits start at a defined scope. I work with companies whose AWS production matters.
-      </p>
-      <a
-        href="/book"
-        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy-900 font-semibold rounded-md hover:bg-slate-100 transition-colors"
-      >
-        Schedule a call <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </section>
+    <CredentialsBar />
+  </div>
 </BaseLayout>

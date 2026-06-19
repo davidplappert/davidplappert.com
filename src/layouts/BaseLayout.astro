@@ -7,12 +7,16 @@ export interface Props {
   title: string;
   description?: string;
   schema?: Record<string, any> | Record<string, any>[];
+  header?: boolean;
+  footer?: boolean;
 }
 
 const {
   title,
-  description = "Fractional AWS Reliability Lead for revenue-critical systems. US Patent holder, 2x AWS City on a Cloud Award winner, 19 years on AWS since EC2 beta.",
+  description = "David Plappert — Principal Cloud Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta, US Patent holder, 2x AWS City on a Cloud Award winner. Open to senior and principal cloud roles.",
   schema,
+  header = true,
+  footer = true,
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
@@ -46,8 +50,8 @@ const personSchema = {
   "name": "David Plappert",
   "givenName": "David",
   "familyName": "Plappert",
-  "jobTitle": "Fractional AWS Reliability Lead",
-  "description": "Senior cloud architect specializing in production reliability for revenue-critical AWS systems. 19 years of AWS experience since EC2 beta.",
+  "jobTitle": "Principal Cloud Architect & AWS Reliability Lead",
+  "description": "Principal-level cloud architect and AWS reliability lead with 19 years of AWS experience since EC2 beta. Patent holder, two-time AWS City on a Cloud Award winner, shipping AI-augmented engineering in production.",
   "url": "https://davidplappert.com",
   "address": {
     "@type": "PostalAddress",
@@ -64,12 +68,16 @@ const personSchema = {
     "Amazon Web Services",
     "AWS Lambda",
     "AWS EKS",
+    "AWS CDK",
     "Serverless Architecture",
     "Cloud Architecture",
     "Site Reliability Engineering",
     "Production Reliability",
+    "Distributed Systems",
+    "AI Engineering",
+    "Agentic Workflows",
+    "Model Context Protocol (MCP)",
     "Cloud Cost Optimization",
-    "Vendor Management",
     "Kubernetes",
     "Terraform",
     "Healthcare Technology",
@@ -102,53 +110,12 @@ const websiteSchema = {
   "@id": "https://davidplappert.com/#website",
   "url": "https://davidplappert.com",
   "name": "David Plappert",
-  "description": "Fractional AWS Reliability Lead for revenue-critical systems.",
+  "description": "Principal Cloud Architect & AWS Reliability Lead — 19 years on AWS since EC2 beta.",
   "publisher": { "@id": "https://davidplappert.com/#person" },
   "inLanguage": "en-US"
 };
 
-const professionalServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://davidplappert.com/#service",
-  "name": "David Plappert — Fractional AWS Reliability Consulting",
-  "url": "https://davidplappert.com",
-  "image": "https://davidplappert.com/og-image.svg",
-  "provider": { "@id": "https://davidplappert.com/#person" },
-  "founder": { "@id": "https://davidplappert.com/#person" },
-  "serviceType": "Cloud Architecture & Reliability Consulting",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Worldwide (remote engagements)"
-  },
-  "knowsAbout": [
-    "Vendor-Shipped AWS Gatekeeping",
-    "Production Reliability Engineering",
-    "AWS Cost Optimization",
-    "Cloud Architecture",
-    "Vendor Management Technical Authority",
-    "Healthcare Exchange Systems",
-    "Site Reliability Engineering",
-    "AWS Serverless Architecture"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Engagement Types",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fractional AWS Reliability Lead", "description": "Ongoing retainer providing senior IC oversight for production AWS environments." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AWS Production Audit", "description": "Fixed-scope production reliability and cost assessment with remediation roadmap." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vendor Technical Oversight", "description": "Multi-month buyer-side technical gatekeeping for vendor-shipped AWS infrastructure." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategic Cloud Advisory", "description": "Light-retainer senior cloud architecture counsel for engineering leadership." } }
-    ]
-  },
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book a discovery call",
-    "target": "https://davidplappert.com/book"
-  }
-};
-
-const schemas = [personSchema, websiteSchema, professionalServiceSchema];
+const schemas = [personSchema, websiteSchema];
 if (breadcrumbSchema) schemas.push(breadcrumbSchema);
 if (schema) {
   if (Array.isArray(schema)) {
@@ -192,7 +159,7 @@ if (schema) {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -206,7 +173,7 @@ if (schema) {
     <meta property="og:image" content="https://davidplappert.com/og-image.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="David Plappert — Fractional AWS Reliability Lead" />
+    <meta property="og:image:alt" content="David Plappert — Principal Cloud Architect & AWS Reliability Lead" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -226,10 +193,10 @@ if (schema) {
     ))}
   </head>
   <body>
-    <Header />
+    {header && <Header />}
     <main>
       <slot />
     </main>
-    <Footer />
+    {footer && <Footer />}
   </body>
 </html>

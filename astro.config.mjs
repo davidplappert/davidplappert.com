@@ -8,6 +8,15 @@ export default defineConfig({
     format: 'directory',
   },
   redirects: {
-    '/contact': '/book',
+    '/contact': '/',
+    '/services': '/',
+    '/about': '/',
+    '/resume': '/',
+    '/book': '/',
+    '/case-studies': '/',
+    '/faq': '/',
+    '/testimonials': '/',
+    '/press': '/',
+    '/guides/vendor-shipped-aws-gatekeeping': '/',
   },
 });
