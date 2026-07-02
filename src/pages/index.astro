@@ -1,28 +1,79 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CredentialsBar from '../components/CredentialsBar.astro';
+import Footer from '../components/Footer.astro';
 
 const SCHED_URL = 'https://calendar.app.google/ESxXiEQp9Ky2xTXf6';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/davidplappert';
 const GITHUB_URL = 'https://github.com/davidplappert';
+
+const services = [
+  {
+    title: 'AWS Architecture Review & Well-Architected Assessment',
+    body: 'Independent, senior-level review of your AWS architecture against the Well-Architected Framework — reliability, security, cost, and operational excellence — with a prioritized, actionable findings report.',
+  },
+  {
+    title: 'Vendor Platform Oversight (Buy-Side Review)',
+    body: "Paying a vendor seven or eight figures for a platform? I review every vendor-shipped release (CDK, CloudFormation, Terraform) before it reaches your production — the same gatekeeping I perform today for a Fortune 50 manufacturer's revenue-critical platform.",
+  },
+  {
+    title: 'Reliability & Observability Engineering',
+    body: 'Load testing strategy, monitoring and alerting design, high-availability and disaster-recovery architecture for revenue-bearing AWS systems — built by someone who has been the final escalation point for a decade.',
+  },
+  {
+    title: 'Cloud Migration Strategy',
+    body: 'On-premises to AWS, monolith to microservices, or platform to platform. I led the fastest state-based health exchange transition off the federal FedHub on record, and Best Buy’s billion-dollar e-commerce systems onto AWS.',
+  },
+  {
+    title: 'AI-Augmented Engineering Enablement',
+    body: 'I run agentic AI in production today — Claude Code workflows that deploy, dry-run, detect bugs, and file tickets through custom MCP integrations. I can build the same leverage, with governance, into your engineering organization.',
+  },
+  {
+    title: 'Fractional Principal Cloud Architect',
+    body: 'Ongoing senior architecture leadership on a retainer basis — roadmap, design reviews, vendor management, and mentoring for teams that need principal-level AWS depth without a full-time hire.',
+  },
+];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://davidplappert.com/#consulting",
+  "name": "David Plappert — AWS Cloud Consulting",
+  "url": "https://davidplappert.com",
+  "provider": { "@id": "https://davidplappert.com/#person" },
+  "founder": { "@id": "https://davidplappert.com/#person" },
+  "description": "Independent AWS consulting: architecture reviews and Well-Architected assessments, vendor platform oversight, reliability and observability engineering, cloud migration strategy, AI-augmented engineering enablement, and fractional principal cloud architect engagements.",
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://calendar.app.google/ESxXiEQp9Ky2xTXf6" },
+  "knowsAbout": ["Amazon Web Services", "AWS Well-Architected Framework", "Cloud Architecture", "Site Reliability Engineering", "AI Engineering"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Consulting Services",
+    "itemListElement": services.map((s) => ({
+      "@type": "Offer",
+      "itemOffered": { "@type": "Service", "name": s.title, "description": s.body }
+    }))
+  }
+};
 ---
 <BaseLayout
-  title="David Plappert — Principal Cloud Architect & Consulting Architect"
-  description="David Plappert — Principal Cloud Architect, Consulting Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta, US Patent holder, 2× AWS City on a Cloud Award winner. Available for consulting and contract engagements: AWS architecture review, reliability, and AI-augmented engineering."
+  title="David Plappert — Principal Cloud Architect & AWS Consultant"
+  description="David Plappert — Principal Cloud Architect, AWS Consultant & Reliability Lead. 19 years on AWS since EC2 beta, US Patent holder, 2× AWS City on a Cloud Award winner. Available for consulting engagements: AWS architecture review, Well-Architected assessments, vendor platform oversight, reliability engineering, and AI-augmented engineering."
   header={false}
   footer={false}
+  schema={serviceSchema}
 >
-  <div class="min-h-screen flex flex-col">
+  <div class="flex flex-col">
     <!-- Hero -->
-    <section class="flex-1 flex items-center justify-center bg-gradient-to-b from-white to-navy-50/60">
-      <div class="container-prose flex flex-col items-center text-center py-20">
+    <section class="bg-gradient-to-b from-white to-navy-50/60">
+      <div class="container-prose flex flex-col items-center text-center py-16 md:py-20">
         <!-- Portrait -->
         <div class="relative w-36 h-36 md:w-44 md:h-44 mb-9">
           <div aria-hidden="true" class="absolute -inset-5 rounded-full bg-accent/15 blur-2xl"></div>
           <div class="relative w-full h-full rounded-full overflow-hidden ring-4 ring-white shadow-xl">
             <img
               src="/images/david-plappert.jpg"
-              alt="David Plappert — Principal Cloud Architect"
+              alt="David Plappert — Principal Cloud Architect and AWS consultant"
               class="w-full h-full object-cover scale-110 translate-y-1.5"
               width="176"
               height="176"
@@ -34,9 +85,9 @@ const GITHUB_URL = 'https://github.com/davidplappert';
         </div>
 
         <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-navy-900">David Plappert</h1>
-        <p class="mt-4 text-lg md:text-xl font-semibold text-accent">Principal Cloud Architect · Consulting Architect</p>
+        <p class="mt-4 text-lg md:text-xl font-semibold text-accent">Principal Cloud Architect · AWS Consultant</p>
         <p class="mt-2 text-base md:text-lg text-slate-500">Shipped AI for CI/CD &amp; Apps</p>
-        <p class="mt-3 text-sm md:text-base text-slate-600">Available for consulting &amp; contract engagements — AWS architecture review, Well-Architected reliability, vendor platform oversight, and AI-augmented engineering</p>
+        <p class="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">Available for consulting &amp; contract engagements — AWS architecture review, Well-Architected reliability, vendor platform oversight, and AI-augmented engineering</p>
 
         <div class="mt-8 mb-1 h-px w-16 bg-slate-200"></div>
 
@@ -64,5 +115,60 @@ const GITHUB_URL = 'https://github.com/davidplappert';
     </section>
 
     <CredentialsBar />
+
+    <!-- Consulting services -->
+    <section id="services" class="bg-white">
+      <div class="container-wide py-16 md:py-20">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-navy-900 text-center">Consulting Services</h2>
+        <p class="mt-4 text-base md:text-lg text-slate-600 text-center max-w-3xl mx-auto">
+          Senior AWS depth, delivered as focused engagements. Every service below is something I do in production today — not a practice area on a slide.
+        </p>
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((s) => (
+            <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 class="text-lg font-semibold text-navy-900">{s.title}</h3>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">{s.body}</p>
+            </div>
+          ))}
+        </div>
+        <div class="mt-12 text-center">
+          <a href={SCHED_URL} target="_blank" rel="noopener" class="btn-primary">Book a 30-minute call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / proof -->
+    <section id="about" class="bg-navy-50/50 border-t border-slate-200">
+      <div class="container-prose py-16 md:py-20">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-navy-900 text-center">Why teams hire me</h2>
+        <div class="mt-8 space-y-5 text-base leading-relaxed text-slate-700">
+          <p>
+            I have run production workloads on Amazon Web Services for <strong>19 years — since the EC2 beta</strong>. I hold
+            <a href="https://patents.google.com/patent/US11146689" target="_blank" rel="noopener" class="link">US Patent 11,146,689</a> for cloud architecture and won the
+            <strong>AWS City on a Cloud Award twice</strong> (2016, 2018) for the architecture behind the DC Health Benefit Exchange.
+          </p>
+          <p>
+            Today I am the sole client-side AWS authority for a <strong>Fortune 50 manufacturer's revenue-critical platform</strong> — independently reviewing every vendor-shipped
+            AWS CDK release before it reaches production and providing technical oversight of an eight-figure vendor relationship. Before that, I spent a decade as a
+            client-facing principal architect at a government health-tech consultancy, where architecture I scoped and delivered <strong>grew engagements by $1M and $2M per year</strong>,
+            payment workflows I designed processed <strong>$500M+ annually</strong> under HIPAA, SOC 2, and IRS Publication 1075, and I advised
+            <strong>18F (GSA)</strong> on state health-exchange replication.
+          </p>
+          <p>
+            The through-line of my career is <strong>reliability for systems where downtime is measured in dollars per minute</strong> — from Best Buy's e-commerce
+            infrastructure on Thanksgiving Day (25% of all US e-commerce traffic, one engineer on site: me) to a real-time 3D commerce platform earning $3,000 a minute.
+            And I pair that with modern leverage: I ship <strong>agentic AI engineering in production</strong> — Claude Code workflows that deploy, test, detect bugs, and file
+            tickets through custom MCP integrations I wrote.
+          </p>
+          <p class="text-slate-600">
+            Based in Peoria, Illinois · Remote-first, US-wide ·
+            <a href="/David-Plappert-Resume.pdf" target="_blank" rel="noopener" class="link">Résumé (PDF)</a> ·
+            <a href={SCHED_URL} target="_blank" rel="noopener" class="link">Schedule a call</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
   </div>
 </BaseLayout>

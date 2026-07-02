@@ -12,7 +12,7 @@
   <rect x="0" y="0" width="1200" height="6" fill="#c2410c"/>
 
   <!-- Eyebrow / role label -->
-  <text x="80" y="160" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">PRINCIPAL CLOUD ARCHITECT · AWS RELIABILITY LEAD</text>
+  <text x="80" y="160" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">PRINCIPAL CLOUD ARCHITECT · AWS CONSULTANT</text>
 
   <!-- Name -->
   <text x="80" y="240" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="80" font-weight="800">David Plappert</text>
