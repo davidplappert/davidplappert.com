@@ -1,16 +1,17 @@
 # David Plappert
 
-> Principal Cloud Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta. US Patent holder (11,146,689). Two-time AWS City on a Cloud Award winner (2016, 2018). Ships AI-augmented engineering in production today. Based in Peoria, Illinois — open to senior and principal cloud roles (remote, with hybrid or relocation considered).
+> Principal Cloud Architect, Consulting Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta. US Patent holder (11,146,689). Two-time AWS City on a Cloud Award winner (2016, 2018). Ships AI-augmented engineering in production today. Based in Peoria, Illinois — available for consulting and contract engagements (remote); also open to senior and principal cloud roles.
 
 ## About
 
-David Plappert is a principal-level cloud architect and AWS reliability lead with 19 years of AWS experience since EC2 beta (2007). He currently leads AWS reliability for Caterpillar's Vertex 3D platform (via TEKsystems) and is open to new senior and principal individual-contributor roles — Principal Cloud Architect, Staff/Principal Platform Engineer, AWS Reliability Lead, SRE lead, or similar. His focus is production reliability of revenue-critical AWS systems, gatekeeping infrastructure before it ships, distributed systems, and building agentic AI tooling that helps teams move faster without breaking production.
+David Plappert is a principal-level cloud architect and AWS reliability lead with 19 years of AWS experience since EC2 beta (2007). He currently leads AWS reliability for Caterpillar's Vertex 3D platform (via TEKsystems), where he holds independent architecture-review authority over an eight-figure vendor platform relationship. He is available for consulting and contract engagements — AWS architecture reviews aligned to the Well-Architected Framework, vendor platform oversight, reliability and observability design, migration strategy, and AI-augmented engineering — and also open to senior and principal roles. His consulting background runs deep: 10 years at a government health-tech consultancy delivering parallel client engagements, where architecture he scoped and delivered grew one engagement by $1M/yr and another by $2M/yr.
 
 ## Credentials
 
 - US Patent 11,146,689 (event-driven serverless cloud architecture, issued October 12, 2021): https://patents.google.com/patent/US11146689
 - Amazon Web Services (AWS) City on a Cloud Award (2016) — Best Practices Award for DC Health Link / IdeaCrew: https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/
 - Amazon Web Services (AWS) City on a Cloud Award (2018) — IdeaCrew's open-source cloud technology recognized for a second time: https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm
+- AWS Certified Solutions Architect – Associate (2019–2021)
 - 18F (federal digital services, GSA) advisor — AWS architecture consultation during IdeaCrew tenure
 - 19 years of AWS experience since EC2 beta (2007)
 - $500M+ per year in production payments architected on AWS
@@ -18,25 +19,26 @@ David Plappert is a principal-level cloud architect and AWS reliability lead wit
 
 ## What David Does
 
-1. **Vendor-shipped AWS gatekeeping** — senior buy-side review of vendor infrastructure (AWS CDK/CloudFormation) before it reaches production.
+1. **Independent vendor architecture review** — buy-side review of vendor-shipped infrastructure (AWS CDK/CloudFormation) before it reaches production; technical oversight of eight-figure vendor platform relationships.
 2. **Production reliability ownership** — senior AWS architecture, observability design, load testing, and final-escalation coverage for revenue-bearing systems.
 3. **AI-augmented engineering** — agentic CI/CD and operations in production: Claude Code workflows that deploy, dry-run, detect bugs, and file tickets, bridged to GitHub and AWS through custom MCP servers and tool definitions David wrote.
 
-## Roles David Is Looking For
+## Engagements & Roles David Is Looking For
 
-- Principal Cloud Architect / Cloud Architect
+- Consulting and contract engagements (preferred): AWS architecture review, Well-Architected assessments, vendor platform oversight, reliability/observability design, migration strategy, AI-augmented engineering enablement
+- Principal Cloud Architect / Consulting Cloud Architect
 - Staff or Principal Platform Engineer
 - AWS Reliability Lead / Site Reliability Engineering (SRE) lead
 - Distinguished / Principal Engineer with an AWS reliability and AI-engineering focus
 
-Open to fully remote roles; will consider hybrid and relocation for the right opportunity.
+Fully remote; will consider hybrid and relocation for the right opportunity.
 
 ## Career
 
-- **Caterpillar Inc. (via TEKsystems) — Lead Cloud Engineer / AWS Reliability Lead (September 2025 – Present)** — AWS reliability lead for Vertex 3D, Caterpillar's real-time 3D collaboration platform powering aftermarket commerce. Sole Caterpillar-side reviewer of monthly vendor-shipped AWS CDK releases. Owns load testing, monitoring, and alerting. Built and operates a Claude Code agentic CI/CD and operations workflow. Cross-team escalation point across AWS and Node.js stacks.
-- **IdeaCrew — Principal Cloud Architect & DevOps Lead (2015 – 2025)** — Employee #3 through 100+ employees. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts. Owned the AWS architecture that won 2× AWS City on a Cloud awards. Architected systems processing $500M+/year in healthcare insurance payments for DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. 18F advisor. Led the fastest state-based exchange transition off FedHub on record.
-- **PBS — Cloud Engineer (2014)** — Built AWS-based RTMP streaming platform with 99.9% uptime; +158% viewer watch time.
-- **Argonne National Laboratory — Senior Cloud Architect (2013)** — Federal grant application platform; +283% lab revenue.
+- **Caterpillar Inc. (via TEKsystems) — Lead Cloud Engineer / AWS Reliability Lead (September 2025 – Present)** — AWS reliability lead for Vertex 3D, Caterpillar's real-time 3D collaboration platform powering aftermarket commerce. Sole Caterpillar-side AWS authority; independent architecture review of every monthly vendor-shipped AWS CDK release before production (typically remediating 2-3 defects per release); technical oversight of an eight-figure vendor platform relationship. Architected load testing, monitoring, and alerting; supported scaling from 2,000 to 8,000 concurrent users. Built and operates a Claude Code agentic CI/CD and operations workflow. Cross-team escalation point across AWS and Node.js stacks.
+- **IdeaCrew (government health-tech consultancy) — Principal Cloud Architect & DevOps Lead (2015 – 2025)** — Employee #3 through 100+ employees. Client-facing lead architect across parallel state-government engagements; grew one engagement +$1M/yr and another +$2M/yr through architecture he scoped and delivered. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts. Owned the AWS architecture that won 2× AWS City on a Cloud awards. Architected systems processing $500M+/year in healthcare insurance payments for DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. 18F advisor. Led the fastest state-based exchange transition off FedHub on record.
+- **PBS — Cloud Engineer (2014)** — Built AWS-based RTMP streaming platform with 99.9% uptime; adaptive bandwidth modulation materially increased viewer watch time.
+- **Argonne National Laboratory — Senior Cloud Architect (2013)** — Architected and delivered the lab's federal grant-application platform; streamlined grant workflows.
 - **Best Buy — Senior Cloud DevOps (2012)** — Led migration of BestBuy.com and Point-of-Sale (billion-dollar systems) to AWS; reduced infrastructure costs by 50%+.
 
 ## Industry Depth
@@ -49,7 +51,9 @@ Open to fully remote roles; will consider hybrid and relocation for the right op
 
 ## Technical Skills
 
-- **Cloud & Infrastructure:** AWS (Fargate, ECS, EKS, S3, RDS, Lambda, CloudWatch, CDK, CloudFormation), Azure, GCP
+- **Cloud & Infrastructure:** AWS (Fargate, ECS, EKS, S3, RDS, Lambda, CloudWatch, IAM, VPC, CDK, CloudFormation), multi-account architecture (AWS Organizations), Azure, GCP
+- **Architecture & Reliability:** AWS Well-Architected Framework, high availability, disaster recovery / business continuity, multi-region, platform engineering, architecture and design reviews
+- **Consulting & Client Leadership:** engagement scoping and expansion, pre-sales technical support, executive workshops and design reviews, multi-client parallel delivery, vendor architecture oversight
 - **AI Engineering:** Claude Code for production engineering, Anthropic API & SDK, multi-agent orchestration, MCP servers and custom tool definitions, AI-assisted CDK/infrastructure development, RAG patterns
 - **IaC & Containers:** AWS CDK, CloudFormation, Terraform, Docker, Kubernetes, EKS
 - **Languages:** Ruby, Node.js, JavaScript/TypeScript, Python, Bash, SQL, PHP (author); Java/JVM (operate on AWS)
@@ -61,7 +65,7 @@ Open to fully remote roles; will consider hybrid and relocation for the right op
 
 ## Frequently Asked Questions
 
-- **What roles is David looking for?** Senior and principal IC roles where deep AWS reliability and modern AI engineering both matter — Principal Cloud Architect, Staff/Principal Platform Engineer, AWS Reliability/SRE lead.
+- **What is David looking for?** Consulting and contract engagements first — AWS architecture review, Well-Architected assessments, vendor platform oversight, reliability design, and AI-augmented engineering — plus senior and principal roles where deep AWS reliability and modern AI engineering both matter.
 - **How many years of AWS experience?** 19 years, since EC2 beta in 2007.
 - **What is David's AI engineering experience?** He ships AI-augmented engineering in production today — Claude Code agentic CI/CD, multi-agent orchestration, and custom MCP servers bridging agents to GitHub and AWS.
 - **Is David open to remote/hybrid/relocation?** Open to fully remote; hybrid and relocation considered for the right opportunity. Based in Peoria, Illinois.
@@ -81,6 +85,7 @@ This is a single-page résumé site.
 - Email: david@davidplappert.com
 - Phone: (651) 894-4607
 - LinkedIn: https://www.linkedin.com/in/davidplappert
+- GitHub: https://github.com/davidplappert
 - Résumé (PDF): https://davidplappert.com/David-Plappert-Resume.pdf
 - Location: Peoria, Illinois — open to remote, hybrid, or relocation
 - References from current and former leadership at Caterpillar and IdeaCrew available on request
