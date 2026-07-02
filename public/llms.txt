@@ -77,10 +77,9 @@ Fully remote; will consider hybrid and relocation for the right opportunity.
 
 ## Pages
 
-This is a single-page résumé site.
+This is a single-page consulting site. Résumé available on request.
 
 - [Home — full résumé](https://davidplappert.com/): https://davidplappert.com/
-- Résumé (PDF): https://davidplappert.com/David-Plappert-Resume.pdf
 
 ## Contact
 
@@ -89,6 +88,5 @@ This is a single-page résumé site.
 - Phone: (651) 894-4607
 - LinkedIn: https://www.linkedin.com/in/davidplappert
 - GitHub: https://github.com/davidplappert
-- Résumé (PDF): https://davidplappert.com/David-Plappert-Resume.pdf
 - Location: Peoria, Illinois — open to remote, hybrid, or relocation
 - References from current and former leadership at Caterpillar and IdeaCrew available on request
