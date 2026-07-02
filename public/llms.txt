@@ -1,6 +1,6 @@
 # David Plappert
 
-> Principal Cloud Architect, Consulting Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta. US Patent holder (11,146,689). Two-time AWS City on a Cloud Award winner (2016, 2018). Ships AI-augmented engineering in production today. Based in Peoria, Illinois — available for consulting and contract engagements (remote); also open to senior and principal cloud roles.
+> Principal Cloud Architect, Consulting Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta. US Patent holder (11,146,689). Led the IdeaCrew DevOps team that won the AWS City on a Cloud Award twice (2016, 2018). Ships AI-augmented engineering in production today. Based in Peoria, Illinois — available for consulting and contract engagements (remote); also open to senior and principal cloud roles.
 
 ## About
 
@@ -9,8 +9,8 @@ David Plappert is a principal-level cloud architect and AWS reliability lead wit
 ## Credentials
 
 - US Patent 11,146,689 (event-driven serverless cloud architecture, issued October 12, 2021): https://patents.google.com/patent/US11146689
-- Amazon Web Services (AWS) City on a Cloud Award (2016) — Best Practices Award for DC Health Link / IdeaCrew: https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/
-- Amazon Web Services (AWS) City on a Cloud Award (2018) — IdeaCrew's open-source cloud technology recognized for a second time: https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm
+- Amazon Web Services (AWS) City on a Cloud Award (2016) — Best Practices Award won by the IdeaCrew DevOps team David led, for DC Health Link: https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/
+- Amazon Web Services (AWS) City on a Cloud Award (2018) — IdeaCrew's open-source cloud technology (team led by David) recognized a second time: https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm
 - AWS Certified Solutions Architect – Associate (2019–2021)
 - 18F (federal digital services, GSA) advisor — AWS architecture consultation during IdeaCrew tenure
 - 19 years of AWS experience since EC2 beta (2007)
@@ -36,7 +36,7 @@ Fully remote; will consider hybrid and relocation for the right opportunity.
 ## Career
 
 - **Caterpillar Inc. (via TEKsystems) — Lead Cloud Engineer / AWS Reliability Lead (September 2025 – Present)** — AWS reliability lead for Vertex 3D, Caterpillar's real-time 3D collaboration platform powering aftermarket commerce. Sole Caterpillar-side AWS authority; independent architecture review of every monthly vendor-shipped AWS CDK release before production (typically remediating 2-3 defects per release); technical oversight of an eight-figure vendor platform relationship. Architected load testing, monitoring, and alerting; supported scaling from 2,000 to 8,000 concurrent users. Built and operates a Claude Code agentic CI/CD and operations workflow. Cross-team escalation point across AWS and Node.js stacks.
-- **IdeaCrew (government health-tech consultancy) — Principal Cloud Architect & DevOps Lead (2015 – 2025)** — Employee #3 through 100+ employees. Client-facing lead architect across parallel state-government engagements; grew one engagement +$1M/yr and another +$2M/yr through architecture he scoped and delivered. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts. Owned the AWS architecture that won 2× AWS City on a Cloud awards. Architected systems processing $500M+/year in healthcare insurance payments for DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. 18F advisor. Led the fastest state-based exchange transition off FedHub on record.
+- **IdeaCrew (government health-tech consultancy) — Principal Cloud Architect & DevOps Lead (2015 – 2025)** — Employee #3 through 100+ employees. Client-facing lead architect across parallel state-government engagements; grew one engagement +$1M/yr and another +$2M/yr through architecture he scoped and delivered. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts. Led the DevOps team that won 2× AWS City on a Cloud awards for architecture he owned. Architected systems processing $500M+/year in healthcare insurance payments for DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. 18F advisor. Led the fastest state-based exchange transition off FedHub on record.
 - **VentureBeat — Senior Web Developer / Cloud DevOps (June 2014 – October 2015)** — Managed all of VentureBeat's AWS infrastructure with Chef; built CI on GitHub + Jenkins and rolled out New Relic monitoring fleet-wide; launched VentureBeat Insight ($2M revenue in year one, three-person team); scaled one of the web's largest WordPress installations through ~150% year-over-year traffic growth.
 - **Finish Line Planner — Tech Lead (2013 – 2014)** — Led a team building an event- and volunteer-management SaaS from scratch on scalable AWS infrastructure; grew product usage 1500% through Mixpanel-driven iteration.
 - **Argonne National Laboratory — Cloud Developer (2013)** — Built and managed the application suite administering hundreds of millions of dollars in competitive federal research funding; grew the lab's funding 152% year-over-year.
@@ -72,7 +72,7 @@ Fully remote; will consider hybrid and relocation for the right opportunity.
 - **How many years of AWS experience?** 19 years, since EC2 beta in 2007.
 - **What is David's AI engineering experience?** He ships AI-augmented engineering in production today — Claude Code agentic CI/CD, multi-agent orchestration, and custom MCP servers bridging agents to GitHub and AWS.
 - **Is David open to remote/hybrid/relocation?** Open to fully remote; hybrid and relocation considered for the right opportunity. Based in Peoria, Illinois.
-- **What is the AWS City on a Cloud Award?** An annual AWS award recognizing innovative cloud solutions; David won in 2016 and 2018 for the DC Health Benefit Exchange.
+- **What is the AWS City on a Cloud Award?** An annual AWS award recognizing innovative cloud solutions; the IdeaCrew DevOps team David led won in 2016 and 2018 for the DC Health Benefit Exchange.
 - **What is David's US Patent for?** US Patent 11,146,689 covers an event-driven serverless cloud architecture, issued October 12, 2021.
 
 ## Pages
