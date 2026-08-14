@@ -1,17 +1,17 @@
 # David Plappert
 
-> Principal Cloud Architect, Consulting Architect & AWS Reliability Lead. 19 years on AWS since EC2 beta. US Patent holder (11,146,689). Led the IdeaCrew DevOps team that won the AWS City on a Cloud Award twice (2016, 2018). Ships AI-augmented engineering in production today. Based in Peoria, Illinois — available for consulting and contract engagements (remote); also open to senior and principal cloud roles.
+> Principal AI & Cloud Architect — AWS. Ships production AI on Amazon Bedrock (agents, RAG, multimodal extraction) and owns reliability for revenue-bearing AWS platforms. 19 years on AWS since EC2 beta. Sole inventor of US Patent 11,146,689. Led the IdeaCrew DevOps team that won the AWS City on a Cloud Award twice (2016, 2018). Based in Peoria, Illinois — available for W2 contract and consulting engagements, US remote only; also open to senior and principal cloud roles.
 
 ## About
 
-David Plappert is a principal-level cloud architect and AWS reliability lead with 19 years of AWS experience since EC2 beta (2007). He currently leads AWS reliability for Caterpillar's Vertex 3D platform (via TEKsystems), where he holds independent architecture-review authority over an eight-figure vendor platform relationship. He is available for consulting and contract engagements — AWS architecture reviews aligned to the Well-Architected Framework, vendor platform oversight, reliability and observability design, migration strategy, and AI-augmented engineering — and also open to senior and principal roles. His consulting background runs deep: 10 years at a government health-tech consultancy delivering parallel client engagements, where architecture he scoped and delivered grew one engagement by $1M/yr and another by $2M/yr.
+David Plappert is a principal AI and cloud architect with 19 years of AWS experience since EC2 beta (2007). He ships AI to production today: an observability layer on Amazon Bedrock that detects production defects, opens a pull request against the CDK with a proposed fix, and pages the owning engineer (Bedrock Converse API for tool calling, embeddings in pgvector); agentic CI/CD through custom MCP servers he wrote; and multimodal document extraction with vector search on Amazon OpenSearch Serverless. He is also the Principal Cloud Architect and AWS reliability owner for Caterpillar's Vertex 3D platform (via TEKsystems) — a real-time 3D commerce platform earning roughly $3,000 per minute when running, which he scaled from 2,000 to 8,000 concurrent users and where he is the sole client-side technical counterparty on an eight-figure vendor contract. He is available for W2 contract and consulting engagements — production AI engineering on AWS, reliability and observability design, AWS architecture reviews aligned to the Well-Architected Framework, vendor platform oversight, and migration strategy — and also open to senior and principal roles. His consulting background runs deep: 10 years at a government health-tech consultancy delivering parallel client engagements, where architecture he scoped and delivered grew one engagement by $1M/yr and another by $2M/yr.
 
 ## Credentials
 
 - US Patent 11,146,689 (event-driven serverless cloud architecture, issued October 12, 2021): https://patents.google.com/patent/US11146689
 - Amazon Web Services (AWS) City on a Cloud Award (2016) — Best Practices Award won by the IdeaCrew DevOps team David led, for DC Health Link: https://aws.amazon.com/blogs/publicsector/city-on-a-cloud-innovation-challenge-best-practices-award-winners/
 - Amazon Web Services (AWS) City on a Cloud Award (2018) — IdeaCrew's open-source cloud technology (team led by David) recognized a second time: https://www.prweb.com/releases/ideacrews_open_source_cloud_based_technology_powers_dc_health_link_to_second_prestigious_amazon_award/prweb15631477.htm
-- AWS Certified Solutions Architect – Associate (2019–2021)
+- AWS Certified Solutions Architect – Associate
 - 18F (federal digital services, GSA) advisor — AWS architecture consultation during IdeaCrew tenure
 - 19 years of AWS experience since EC2 beta (2007)
 - $500M+ per year in production payments architected on AWS
@@ -19,27 +19,30 @@ David Plappert is a principal-level cloud architect and AWS reliability lead wit
 
 ## What David Does
 
-1. **Independent vendor architecture review** — buy-side review of vendor-shipped infrastructure (AWS CDK/CloudFormation) before it reaches production; technical oversight of eight-figure vendor platform relationships.
-2. **Production reliability ownership** — senior AWS architecture, observability design, load testing, and final-escalation coverage for revenue-bearing systems.
-3. **AI-augmented engineering** — agentic CI/CD and operations in production: Claude Code workflows that deploy, dry-run, detect bugs, and file tickets, bridged to GitHub and AWS through custom MCP servers and tool definitions David wrote.
+1. **Production AI engineering on AWS** — agents and retrieval that run in production, not demos: Amazon Bedrock (Converse API, tool use), RAG over pgvector and Amazon OpenSearch Serverless, multimodal document extraction, and an agentic observability layer that opens its own pull requests against the CDK with a proposed fix.
+2. **Production reliability ownership** — senior AWS architecture, SLO and error-budget design, load testing, observability that stays affordable at 330+ GB of logs a day, and final-escalation coverage for revenue-bearing systems.
+3. **Agentic CI/CD** — Claude Code workflows that deploy, dry-run, detect bugs, and file tickets, with several agents in parallel bridged to GitHub and AWS through custom MCP servers and tool definitions David wrote.
+4. **Independent vendor architecture review** — buy-side review of vendor-shipped infrastructure (AWS CDK/CloudFormation) before it reaches production; sole client-side technical counterparty on eight-figure vendor platform contracts.
 
 ## Engagements & Roles David Is Looking For
 
-- Consulting and contract engagements (preferred): AWS architecture review, Well-Architected assessments, vendor platform oversight, reliability/observability design, migration strategy, AI-augmented engineering enablement
+- W2 contract and consulting engagements (preferred): production AI engineering on AWS, reliability/observability design, AWS architecture review, Well-Architected assessments, vendor platform oversight, migration strategy
+- Principal AI Architect / AI Engineering Lead
 - Principal Cloud Architect / Consulting Cloud Architect
 - Staff or Principal Platform Engineer
 - AWS Reliability Lead / Site Reliability Engineering (SRE) lead
 - Distinguished / Principal Engineer with an AWS reliability and AI-engineering focus
 
-Fully remote; will consider hybrid and relocation for the right opportunity.
+US remote only — not hybrid, and not open to relocation.
 
 ## Career
 
-- **Caterpillar Inc. (via TEKsystems) — Lead Cloud Engineer / AWS Reliability Lead (September 2025 – Present)** — AWS reliability lead for Vertex 3D, Caterpillar's real-time 3D collaboration platform powering aftermarket commerce. Sole Caterpillar-side AWS authority; independent architecture review of every monthly vendor-shipped AWS CDK release before production (typically remediating 2-3 defects per release); technical oversight of an eight-figure vendor platform relationship. Architected load testing, monitoring, and alerting; supported scaling from 2,000 to 8,000 concurrent users. Built and operates a Claude Code agentic CI/CD and operations workflow. Cross-team escalation point across AWS and Node.js stacks.
+- **Caterpillar Inc. (via TEKsystems) — Principal Cloud Architect, AWS Reliability Lead (September 2025 – Present)** — Owns reliability for Vertex 3D, Caterpillar's real-time 3D platform powering aftermarket commerce, worth roughly $3,000 per minute of revenue when running with ~30 downstream publisher integrations. Designed its load testing, SLOs, monitoring, and alerting and scaled it from 2,000 to 8,000 concurrent users; runs observability at 330+ GB of logs a day, tiered and sampled to hold CloudWatch ingest near $5,000 a month. Built an agentic observability layer on Amazon Bedrock (Converse API tool calling, embeddings in PostgreSQL/pgvector) that finds production defects, opens a pull request against the CDK with a proposed fix, and pages the owning engineer. Built a Claude Code agentic workflow for deploys, dry runs, bug detection, ticket filing, and CI/CD orchestration, bridged to GitHub, the AWS CLI, and ticketing through custom MCP servers. Sole Caterpillar technical counterparty on an eight-figure vendor platform contract; authored the findings behind multiple executive-level corrective actions. Architecture review and pre-deploy testing of every monthly vendor CDK release. Technical lead for the Node.js workstream and cross-team escalation point across AWS and Node.js stacks.
+- **Independent Consultant — Principal Architect (March 2025 – September 2025)** — Built an AI-native accounting platform end to end: a user texts in a photo of a receipt and an AI agent reads the image, posts the transaction, and answers plain-language questions about the books. Multimodal extraction of vendor, date, line items, and totals; automatic expense categorization by vector search on Amazon OpenSearch Serverless against prior transactions; spending analysis surfacing budget hot spots and month-over-month drift. Also built a 100% serverless AWS registration and ticketing platform (Ruby on Lambda + API Gateway, TiDB, Nuxt on S3/CloudFront, SES, Twilio, Stripe, AWS CDK) that has processed $650K across 8,000+ tickets, and designed campus-wide WiFi across 10 buildings (UniFi, 75+ access points, Starlink uplinks).
 - **IdeaCrew (government health-tech consultancy) — Principal Cloud Architect & DevOps Lead (2015 – 2025)** — Employee #3 through 100+ employees. Client-facing lead architect across parallel state-government engagements; grew one engagement +$1M/yr and another +$2M/yr through architecture he scoped and delivered. Managed $1M/month cloud spend across 12 AWS and 3 Azure accounts. Led the DevOps team that won 2× AWS City on a Cloud awards for architecture he owned. Architected systems processing $500M+/year in healthcare insurance payments for DCHBX, Massachusetts Health Connector, CoverME, and DC Department of Behavioral Health. 18F advisor. Led the fastest state-based exchange transition off FedHub on record.
-- **VentureBeat — Senior Web Developer / Cloud DevOps (June 2014 – October 2015)** — Managed all of VentureBeat's AWS infrastructure with Chef; built CI on GitHub + Jenkins and rolled out New Relic monitoring fleet-wide; launched VentureBeat Insight ($2M revenue in year one, three-person team); scaled one of the web's largest WordPress installations through ~150% year-over-year traffic growth.
-- **Finish Line Planner — Tech Lead (2013 – 2014)** — Led a team building an event- and volunteer-management SaaS from scratch on scalable AWS infrastructure; grew product usage 1500% through Mixpanel-driven iteration.
-- **Argonne National Laboratory — Cloud Developer (2013)** — Built and managed the application suite administering hundreds of millions of dollars in competitive federal research funding; grew the lab's funding 152% year-over-year.
+- **VentureBeat — Senior Web Developer / Cloud DevOps (June 2014 – October 2015)** — Managed all of VentureBeat's AWS infrastructure with Chef; built CI on GitHub + Jenkins and rolled out New Relic monitoring fleet-wide; launched VentureBeat Insight ($2M revenue in year one, three-person team); kept one of the web's largest WordPress installations online through heavy year-over-year traffic growth.
+- **Finish Line Planner — Tech Lead (2013 – 2014)** — Led a team building an event- and volunteer-management SaaS from scratch on scalable AWS infrastructure.
+- **Argonne National Laboratory — Cloud Developer (2013)** — Built and managed the application suite administering hundreds of millions of dollars in competitive federal research funding; architected and operated the lab's OpenStack private cloud.
 - **Best Buy — Senior Cloud DevOps (2012 – 2013)** — Owned cloud infrastructure across all Best Buy IT projects (BestBuy.com, Point-of-Sale) on AWS with Chef; on Thanksgiving Day 2012, when Best Buy received ~25% of all US e-commerce traffic, was the sole on-site engineer scaling production (1,000+ servers peak); reduced infrastructure costs by 50%+.
 - **PBS — Cloud Engineer, consulting engagement (2012)** — Designed PBS's AWS migration architecture (backup, scaling, load balancing, failover) for its web and video-streaming platforms; trained the internal IT team on EC2, S3, CloudFront, and Route 53.
 - **Earlier roles (2005 – 2012)** — White House Custom Colour (AWS cloud admin; MySQL high-availability failover design), Imagewerks Marketing / CATCO (mobile web team lead), Acesse (AWS EC2/RDS/ElastiCache), Apostolic Bible Institute (Director of Capital Investments, I.T. — campus-wide wireless, live streaming, first production AWS work in the EC2 beta era), Comprehensive Research Group (I.T. advisor).
@@ -55,9 +58,9 @@ Fully remote; will consider hybrid and relocation for the right opportunity.
 ## Technical Skills
 
 - **Cloud & Infrastructure:** AWS (Fargate, ECS, EKS, S3, RDS, Lambda, CloudWatch, IAM, VPC, CDK, CloudFormation), multi-account architecture (AWS Organizations), Azure, GCP
-- **Architecture & Reliability:** AWS Well-Architected Framework, high availability, disaster recovery / business continuity, multi-region, platform engineering, architecture and design reviews
+- **Architecture & Reliability:** AWS Well-Architected Framework, high availability, disaster recovery / business continuity, multi-region, platform engineering, architecture and design reviews, Site Reliability Engineering, SLO / SLI and error budgets, incident response and on-call, postmortems, runbooks, log tiering and ingest cost control, load testing
 - **Consulting & Client Leadership:** engagement scoping and expansion, pre-sales technical support, executive workshops and design reviews, multi-client parallel delivery, vendor architecture oversight
-- **AI Engineering:** Claude Code for production engineering, Anthropic API & SDK, multi-agent orchestration, MCP servers and custom tool definitions, AI-assisted CDK/infrastructure development, RAG patterns
+- **AI Engineering:** Amazon Bedrock (Converse API, tool use, Knowledge Bases), Anthropic API & SDK, RAG, semantic and hybrid search, pgvector, Amazon OpenSearch Serverless (k-NN / vector engine), Titan and Cohere embeddings, multimodal document extraction, LLM function calling, MCP servers and custom tool definitions, multi-agent orchestration, Claude Code for production engineering, evaluation harnesses
 - **IaC & Containers:** AWS CDK, CloudFormation, Terraform, Docker, Kubernetes, EKS
 - **Languages:** Ruby, Node.js, JavaScript/TypeScript, Python, Bash, SQL, PHP (author); Java/JVM (operate on AWS)
 - **Frameworks:** Ruby on Rails, Next.js/React, Nuxt/Vue, Astro, Express.js, Angular, Serverless Framework
@@ -70,10 +73,10 @@ Fully remote; will consider hybrid and relocation for the right opportunity.
 
 - **What is David looking for?** Consulting and contract engagements first — AWS architecture review, Well-Architected assessments, vendor platform oversight, reliability design, and AI-augmented engineering — plus senior and principal roles where deep AWS reliability and modern AI engineering both matter.
 - **How many years of AWS experience?** 19 years, since EC2 beta in 2007.
-- **What is David's AI engineering experience?** He ships AI-augmented engineering in production today — Claude Code agentic CI/CD, multi-agent orchestration, and custom MCP servers bridging agents to GitHub and AWS.
-- **Is David open to remote/hybrid/relocation?** Open to fully remote; hybrid and relocation considered for the right opportunity. Based in Peoria, Illinois.
+- **What is David's AI engineering experience?** He ships AI to production today — an Amazon Bedrock observability agent that opens its own pull requests against production CDK, RAG over pgvector and Amazon OpenSearch Serverless, multimodal document extraction, Claude Code agentic CI/CD, multi-agent orchestration, and custom MCP servers bridging agents to GitHub and AWS.
+- **Is David open to remote/hybrid/relocation?** US remote only. Not hybrid, and not open to relocation. Based in Peoria, Illinois.
 - **What is the AWS City on a Cloud Award?** An annual AWS award recognizing innovative cloud solutions; the IdeaCrew DevOps team David led won in 2016 and 2018 for the DC Health Benefit Exchange.
-- **What is David's US Patent for?** US Patent 11,146,689 covers an event-driven serverless cloud architecture, issued October 12, 2021.
+- **What is David's US Patent for?** US Patent 11,146,689 covers an event-driven serverless cloud architecture on AWS, issued October 12, 2021. David is its sole inventor.
 
 ## Pages
 
@@ -88,5 +91,5 @@ This is a single-page consulting site. Résumé available on request.
 - Phone: (651) 894-4607
 - LinkedIn: https://www.linkedin.com/in/davidplappert
 - GitHub: https://github.com/davidplappert
-- Location: Peoria, Illinois — open to remote, hybrid, or relocation
+- Location: Peoria, Illinois — US remote only
 - References from current and former leadership at Caterpillar and IdeaCrew available on request

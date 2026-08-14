@@ -9,24 +9,24 @@ const GITHUB_URL = 'https://github.com/davidplappert';
 
 const services = [
   {
+    title: 'AI Engineering on AWS',
+    body: 'Agents and retrieval that run in production, not demos. Amazon Bedrock (Converse API, tool use), RAG over pgvector and OpenSearch Serverless, multimodal document extraction, and agentic CI/CD wired to your stack through custom MCP servers. I run all of it in production today.',
+  },
+  {
+    title: 'Reliability & Observability Engineering',
+    body: 'SLOs and error budgets, load testing, monitoring and alerting design, and high-availability and disaster-recovery architecture for revenue-bearing AWS systems — plus observability that stays affordable at hundreds of gigabytes of logs a day.',
+  },
+  {
     title: 'AWS Architecture Review & Well-Architected Assessment',
     body: 'Independent, senior-level review of your AWS architecture against the Well-Architected Framework — reliability, security, cost, and operational excellence — with a prioritized, actionable findings report.',
   },
   {
     title: 'Vendor Platform Oversight (Buy-Side Review)',
-    body: "Paying a vendor seven or eight figures for a platform? I review every vendor-shipped release (CDK, CloudFormation, Terraform) before it reaches your production — the same gatekeeping I perform today for a Fortune 50 manufacturer's revenue-critical platform.",
-  },
-  {
-    title: 'Reliability & Observability Engineering',
-    body: 'Load testing strategy, monitoring and alerting design, high-availability and disaster-recovery architecture for revenue-bearing AWS systems — built by someone who has been the final escalation point for a decade.',
+    body: "Paying a vendor seven or eight figures for a platform? I am the sole client-side technical counterparty on exactly that arrangement today for a Fortune 50 manufacturer — reviewing every vendor-shipped release (CDK, CloudFormation, Terraform) before it reaches production, and turning findings into corrective action the vendor actually ships.",
   },
   {
     title: 'Cloud Migration Strategy',
     body: 'On-premises to AWS, monolith to microservices, or platform to platform. I led the fastest state-based health exchange transition off the federal FedHub on record, and Best Buy’s billion-dollar e-commerce systems onto AWS.',
-  },
-  {
-    title: 'AI-Augmented Engineering Enablement',
-    body: 'I run agentic AI in production today — Claude Code workflows that deploy, dry-run, detect bugs, and file tickets through custom MCP integrations. I can build the same leverage, with governance, into your engineering organization.',
   },
   {
     title: 'Fractional Principal Cloud Architect',
@@ -38,14 +38,14 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": "https://davidplappert.com/#consulting",
-  "name": "David Plappert — AWS Cloud Consulting",
+  "name": "David Plappert — AI &amp; AWS Cloud Consulting",
   "url": "https://davidplappert.com",
   "provider": { "@id": "https://davidplappert.com/#person" },
   "founder": { "@id": "https://davidplappert.com/#person" },
-  "description": "Independent AWS consulting: architecture reviews and Well-Architected assessments, vendor platform oversight, reliability and observability engineering, cloud migration strategy, AI-augmented engineering enablement, and fractional principal cloud architect engagements.",
+  "description": "Independent AI and AWS consulting: production AI engineering on Amazon Bedrock, reliability and observability engineering, architecture reviews and Well-Architected assessments, vendor platform oversight, cloud migration strategy, and fractional principal cloud architect engagements.",
   "areaServed": { "@type": "Country", "name": "United States" },
   "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://calendar.app.google/ESxXiEQp9Ky2xTXf6" },
-  "knowsAbout": ["Amazon Web Services", "AWS Well-Architected Framework", "Cloud Architecture", "Site Reliability Engineering", "AI Engineering"],
+  "knowsAbout": ["Amazon Bedrock", "AI Engineering", "Retrieval-Augmented Generation", "Amazon Web Services", "AWS Well-Architected Framework", "Cloud Architecture", "Site Reliability Engineering"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Consulting Services",
@@ -57,8 +57,8 @@ const serviceSchema = {
 };
 ---
 <BaseLayout
-  title="David Plappert — Principal Cloud Architect & AWS Consultant"
-  description="David Plappert — Principal Cloud Architect & AWS consultant. 19 years on AWS, US Patent holder. Architecture reviews, reliability, AI engineering."
+  title="David Plappert — Principal AI & Cloud Architect | AWS Consultant"
+  description="Principal AI & Cloud Architect. 19 years on AWS, sole inventor of US Patent 11,146,689. Production AI on Bedrock, reliability engineering, architecture review."
   header={false}
   footer={false}
   schema={serviceSchema}
@@ -85,9 +85,9 @@ const serviceSchema = {
         </div>
 
         <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-navy-900">David Plappert</h1>
-        <p class="mt-4 text-lg md:text-xl font-semibold text-accent">Principal Cloud Architect · AWS Consultant</p>
-        <p class="mt-2 text-base md:text-lg text-slate-500">Shipped AI for CI/CD &amp; Apps</p>
-        <p class="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">Available for consulting &amp; contract engagements — AWS architecture review, Well-Architected reliability, vendor platform oversight, and AI-augmented engineering</p>
+        <p class="mt-4 text-lg md:text-xl font-semibold text-accent">Principal AI &amp; Cloud Architect · AWS Consultant</p>
+        <p class="mt-2 text-base md:text-lg text-slate-500">Agentic AI running in production on AWS</p>
+        <p class="mt-3 text-sm md:text-base text-slate-600 max-w-2xl">Available for consulting &amp; contract engagements — production AI engineering on Amazon Bedrock, reliability and observability, AWS architecture review, and vendor platform oversight</p>
 
         <div class="mt-8 mb-1 h-px w-16 bg-slate-200"></div>
 
@@ -143,25 +143,28 @@ const serviceSchema = {
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-navy-900 text-center">Why teams hire me</h2>
         <div class="mt-8 space-y-5 text-base leading-relaxed text-slate-700">
           <p>
-            I have run production workloads on Amazon Web Services for <strong>19 years — since the EC2 beta</strong>. I hold
-            <a href="https://patents.google.com/patent/US11146689" target="_blank" rel="noopener" class="link">US Patent 11,146,689</a> for cloud architecture, and the DevOps team I led won the
-            <strong>AWS City on a Cloud Award twice</strong> (2016, 2018) for the DC Health Benefit Exchange architecture I owned.
+            <strong>I ship AI to production, not demos.</strong> For a Fortune 50 manufacturer I built an observability layer on <strong>Amazon Bedrock</strong> that finds
+            production defects, opens a pull request against the CDK with a proposed fix, and pages the engineer who owns it — Bedrock Converse API for tool calling,
+            with embeddings in <strong>pgvector</strong> for semantic search across logs, runbooks, and architecture docs. Alongside it runs a Claude Code workflow that
+            handles deploys, dry runs, bug detection, and CI/CD, with several agents in parallel bridged to GitHub and AWS through <strong>custom MCP servers I wrote</strong>.
           </p>
           <p>
-            Today I am the sole client-side AWS authority for a <strong>Fortune 50 manufacturer's revenue-critical platform</strong> — independently reviewing every vendor-shipped
-            AWS CDK release before it reaches production and providing technical oversight of an eight-figure vendor relationship. Before that, I spent a decade as a
-            client-facing principal architect at a government health-tech consultancy, where architecture I scoped and delivered <strong>grew engagements by $1M and $2M per year</strong>,
-            payment workflows I designed processed <strong>$500M+ annually</strong> under HIPAA, SOC 2, and IRS Publication 1075, and I advised
-            <strong>18F (GSA)</strong> on state health-exchange replication.
+            <strong>I own reliability where downtime is measured in dollars per minute.</strong> Today that is a real-time 3D commerce platform earning
+            <strong>~$3,000 a minute</strong> when it is running: I designed its load testing, SLOs, monitoring, and alerting, scaled it from
+            <strong>2,000 to 8,000 concurrent users</strong>, and keep <strong>330+ GB of logs a day</strong> both useful and affordable. I am also the sole client-side
+            technical counterparty on the <strong>eight-figure vendor contract</strong> behind it. The same through-line runs back to Best Buy's e-commerce infrastructure
+            on Thanksgiving Day 2012 — 25% of all US e-commerce traffic, one engineer on site: me.
           </p>
           <p>
-            The through-line of my career is <strong>reliability for systems where downtime is measured in dollars per minute</strong> — from Best Buy's e-commerce
-            infrastructure on Thanksgiving Day (25% of all US e-commerce traffic, one engineer on site: me) to a real-time 3D commerce platform earning $3,000 a minute.
-            And I pair that with modern leverage: I ship <strong>agentic AI engineering in production</strong> — Claude Code workflows that deploy, test, detect bugs, and file
-            tickets through custom MCP integrations I wrote.
+            <strong>The depth goes back 19 years, since the EC2 beta.</strong> I am the sole inventor of
+            <a href="https://patents.google.com/patent/US11146689" target="_blank" rel="noopener" class="link">US Patent 11,146,689</a>, an event-driven serverless
+            architecture on AWS, and the DevOps team I led won the <strong>AWS City on a Cloud Award twice</strong> (2016, 2018) for the DC Health Benefit Exchange
+            architecture I owned. I spent a decade as a client-facing principal architect at a government health-tech consultancy, where architecture I scoped and
+            delivered <strong>grew engagements by $1M and $2M per year</strong>, payment workflows I designed processed <strong>$500M+ annually</strong> under HIPAA,
+            SOC 2, and IRS Publication 1075, and I advised <strong>18F (GSA)</strong> on state health-exchange replication.
           </p>
           <p class="text-slate-600">
-            Based in Peoria, Illinois · Remote-first, US-wide ·
+            Based in Peoria, Illinois · Remote, US-wide ·
             <a href={SCHED_URL} target="_blank" rel="noopener" class="link">Schedule a call</a>
           </p>
         </div>
